@@ -1,0 +1,43 @@
+@import 'common';
+
+/*
+// @메인 페이지 스타일
+ */
+
+// 통계기록 영역
+#record {
+    padding: 20px 0;
+    background-color: $main-color;
+    color: #fff;
+    h2, strong {
+        display: inline-block;
+        @extend .font-15px;
+    }
+    strong {
+        float: right;
+        @media (min-width: 768px) {
+            float: none;
+        }
+    }
+    .icon-circle {
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
+        background-color: #fff;
+        > i {
+            color: $main-color;
+        }
+    }
+    .row {
+        > div {
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+                text-align: center;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

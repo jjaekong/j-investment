@@ -1,0 +1,137 @@
+@charset "UTF-8";
+.font-roboto, #header .logo, #footer > nav h2 {
+  font-family: 'Roboto', sans-serif; }
+
+.font-13px {
+  font-size: 13px;
+  line-height: 20px; }
+
+.font-14px {
+  font-size: 14px;
+  line-height: 22px; }
+
+.font-15px {
+  font-size: 15px;
+  line-height: 25px; }
+
+.icon-circle {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center; }
+  .icon-circle > i {
+    font-size: 85%; }
+
+/*
+// @기본 스타일
+ */
+html {
+  background-color: #404040; }
+
+body {
+  background-color: #fff; }
+
+html, body {
+  min-width: 320px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #666; }
+  @media (min-width: 768px) {
+    html, body {
+      font-size: 14px;
+      line-height: 22px; } }
+
+ol, ul {
+  list-style: none;
+  padding-left: 0; }
+
+p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/*
+// 헤더
+ */
+#header {
+  border-bottom: 1px solid #ccc; }
+  #header .logo {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center; }
+  #header a {
+    color: #333;
+    text-decoration: none; }
+  #header .row > div:first-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc; }
+
+/*
+// 푸터
+ */
+#footer {
+  border-top: 3px solid #f36523; }
+  #footer > nav {
+    padding: 0 10px 35px;
+    background-color: #585858; }
+    #footer > nav h2 {
+      margin-top: 30px;
+      margin-bottom: 25px;
+      font-size: 15px;
+      color: #aaa; }
+    #footer > nav ul a {
+      font-size: 13px;
+      line-height: 25px;
+      color: #888; }
+      #footer > nav ul a:hover, #footer > nav ul a:focus {
+        color: #ccc; }
+  #footer > div {
+    padding: 35px 10px;
+    background-color: #404040; }
+    #footer > div .properties {
+      margin-bottom: 10px; }
+      #footer > div .properties ul, #footer > div .properties dl {
+        font-size: 0;
+        line-height: 0; }
+      #footer > div .properties li, #footer > div .properties dt, #footer > div .properties dd, #footer > div .properties address {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: normal;
+        color: #fff; }
+      #footer > div .properties .bar {
+        padding-left: 5px;
+        padding-right: 5px; }
+      #footer > div .properties .colon {
+        padding-left: 3px;
+        padding-right: 3px; }
+    #footer > div .copyright {
+      margin-bottom: 30px;
+      font-size: 11px;
+      line-height: 14px;
+      color: #777; }
+      #footer > div .copyright > i {
+        display: block;
+        color: #555;
+        font-style: normal; }
+    #footer > div .sns {
+      margin-bottom: 30px; }
+      #footer > div .sns > p {
+        text-align: center; }
+        #footer > div .sns > p > a {
+          display: inline-block;
+          width: 34px;
+          height: 34px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-left: 8px;
+          margin-right: 8px;
+          line-height: 26px;
+          font-size: 18px;
+          color: #666;
+          border-radius: 50%; }
+          #footer > div .sns > p > a:hover, #footer > div .sns > p > a:focus {
+            background-color: #000; }
+    #footer > div .language {
+      text-align: center; }
+
+/*# sourceMappingURL=default.css.map */

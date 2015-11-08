@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.font-roboto {
+  font-family: 'Roboto', sans-serif; }
+
+.font-13px {
+  font-size: 13px;
+  line-height: 20px; }
+
+.font-14px {
+  font-size: 14px;
+  line-height: 22px; }
+
+.font-15px, #record h2, #record strong {
+  font-size: 15px;
+  line-height: 25px; }
+
+.icon-circle {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center; }
+  .icon-circle > i {
+    font-size: 85%; }
+
+/*
+// @메인 페이지 스타일
+ */
+#record {
+  padding: 20px 0;
+  background-color: #f36523;
+  color: #fff; }
+  #record h2, #record strong {
+    display: inline-block; }
+  #record strong {
+    float: right; }
+    @media (min-width: 768px) {
+      #record strong {
+        float: none; } }
+  #record .icon-circle {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    background-color: #fff; }
+    #record .icon-circle > i {
+      color: #f36523; }
+  #record .row > div {
+    margin-bottom: 5px; }
+    @media (min-width: 768px) {
+      #record .row > div {
+        margin-bottom: 0;
+        text-align: center; } }
+    #record .row > div:last-child {
+      margin-bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */

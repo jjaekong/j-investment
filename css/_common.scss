@@ -1,0 +1,25 @@
+$main-color: #f36523;
+$font-color: #666;
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font-13px {
+    font-size: 13px;
+    line-height: 20px;
+}
+.font-14px {
+    font-size: 14px;
+    line-height: 22px;
+}
+.font-15px {
+    font-size: 15px;
+    line-height: 25px;
+}
+.icon-circle {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    > i {
+        font-size: 85%;
+    }
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100' rel='stylesheet'>
     <link href='/NanumBarunGothic/nanumbarungothic.css' rel='stylesheet'>
-    <link href="fontello/css/fontello.css" rel="stylesheet">
+    <link href="/fontello/css/fontello.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

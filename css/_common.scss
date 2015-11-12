@@ -1,8 +1,20 @@
 $main-color: #f36523;
 $font-color: #666;
+@mixin font($size, $line-height:null, $weight:null) {
+    @if $size != null {
+        font-size: $size;
+    }
+    @if $line-height != null {
+        line-height: $line-height;
+    }
+    @if $weight != null {
+        font-weight: $weight;
+    }
+}
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
+/*
 .font-13px {
     font-size: 13px;
     line-height: 20px;
@@ -15,6 +27,7 @@ $font-color: #666;
     font-size: 15px;
     line-height: 25px;
 }
+*/
 .icon-circle {
     display: inline-block;
     border-radius: 50%;

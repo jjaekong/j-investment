@@ -4,6 +4,61 @@
 // @메인 페이지 스타일
  */
 
+//  소개 영역
+#introduce {
+    .overview {
+        height: 250px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        h2 {
+            margin-top: 45px;
+            @include font(30px, 30px);
+            color: #fff;
+            @media (min-width: 768px) {
+                margin-top: 100px;
+                @include font(60px, 60px);
+            }
+        }
+        p:nth-of-type(1) {
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+                margin-top: 35px;
+                @include font(15px, 22px);
+                color: #333;
+            }
+        }
+        p:nth-of-type(2) {
+            margin-top: 30px;
+            .btn {
+                width: 110px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border: 2px solid #fff;
+                color: #fff;
+                @include font(12px);
+                @extend .font-roboto;
+                &:hover, &:focus {
+                    background-color: $main-color;
+                }
+            }
+            @media (min-width: 768px) {
+                margin-top: 40px;
+                .btn {
+                    width: 150px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    @include font(16px);
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            height: 510px;
+        }
+    }
+}
+
 // 통계기록 영역
 #record {
     padding: 20px 0;
@@ -11,7 +66,7 @@
     color: #fff;
     h2, strong {
         display: inline-block;
-        @extend .font-15px;
+        @include font(15px, 25px);
     }
     strong {
         float: right;
@@ -37,6 +92,207 @@
             }
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// 추천 프로젝트
+#recommend {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+// 인기 프로젝트
+#popular {
+    h2 {
+        margin-bottom: 10px;
+    }
+    .nav-tabs {
+        border-bottom: 0;
+        margin-bottom: 15px;
+        > li {
+            margin-right: 20px;
+            margin-bottom: 0;
+            > a {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-left: 0;
+                padding-right: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                margin: 0;
+                @include font(13px, 20px);
+                color: $font-color;
+                border-bottom: 2px solid transparent;
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                }
+                @media (min-width: 768px) {
+                    font-size: 15px;
+                }
+            }
+            &.active {
+                > a {
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+// 카테고리
+#category {
+    margin-bottom: 40px;
+    a {
+        overflow: hidden;
+        display: block;
+        border-radius: 6px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        @include font(13px, 20px);
+        @media (min-width: 768px) {
+            @include font(22px, 30px);
+        }
+        > div {
+            position: relative;
+            height: 70px;
+            padding-top: 25px;
+            background-color: rgba(0, 0, 0, .5);
+            @media (min-width: 768px) {
+                height: 160px;
+                padding-top: 65px;
+            }
+            @media (min-width: 1200px) {
+                height: 270px;
+                padding-top: 120px;
+            }
+            > span {
+                display: none;
+                @media (min-width: 768px) {
+                    position: absolute;
+                    top: 35px;
+                    width: 100%;
+                    text-align: center;
+                }
+                @media (min-width: 1200px) {
+                    top: 85px;
+                }
+            }
+        }
+        &:hover, &:focus {
+            > div {
+                background-color: #4ba1dd;
+                > span {
+                    display: none;
+                    @media (min-width: 768px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .row {
+        margin-left: -3px;
+        margin-right: -3px;
+        @media (min-width: 768px) {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        > div {
+            padding-left: 3px;
+            padding-right: 3px;
+            @media (min-width: 768px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            &:nth-of-type(1) {
+                > a {
+                    background-image: url(/images/main/img_category1.jpg);
+                }
+            }
+            &:nth-of-type(2) {
+                > a {
+                    background-image: url(/images/main/img_category2.jpg);
+                }
+            }
+            &:nth-of-type(3) {
+                > a {
+                    background-image: url(/images/main/img_category3.jpg);
+                }
+            }
+            &:nth-of-type(4) {
+                > a {
+                    background-image: url(/images/main/img_category4.jpg);
+                }
+            }
+        }
+    }
+}
+
+// 지금 시작하세요!
+#begin {
+    height: 315px;
+    border-top: 1px solid #dfdfdf;
+    background-image: url(/images/main/bg_begin.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    @media (min-width: 1200px) {
+        height: 357px;
+    }
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        color: #fff;
+        @include font(25px, 27px);
+        @media (min-width: 1200px) {
+            margin-top: 110px;
+            @include font(33px, 35px);
+        }
+    }
+    p:nth-of-type(1) {
+        margin-bottom: 30px;
+        color: #fff;
+        @include font(15px, 18px);
+        @media (min-width: 1200px) {
+            margin-bottom: 50px;
+            @include font(18px, 20px);
+        }
+    }
+    p:nth-of-type(2) {
+        > .btn {
+            display: block;
+            width: 220px;
+            height: 48px;
+            margin: 0 auto;
+            @include font(15px);
+            color: #fff;
+            border-radius: 24px;
+            line-height: 34px;
+            border: 1px solid;
+            &:nth-of-type(1) {
+                border-color: #fff;
+                margin-bottom: 7px;
+            }
+            &:nth-of-type(2) {
+                border-color: $main-color;
+                background-color: $main-color;
+            }
+            @media (min-width: 1200px) {
+                display: inline-block;
+                width: 230px;
+                margin: 0 20px !important;
             }
         }
     }

@@ -8,14 +8,30 @@
         <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
         <main id="content">
             <div id="introduce">
-                <section class="overview" style="background-image: url(/images/dummy/img_visual.jpg)">
+                <div class="slides">
+                    <section class="overview" style="background-image: url(/images/dummy/img_visual.jpg)">
+                        <div class="container">
+                            <h2>EXPLORE PROJECTS,<br>EVERYWHERE</h2>
+                            <p>wawa ventures은 세계 최대의 기금을 조성하는 사이트로서<br>
+    개인, 기업 및 비영리 단체가 온라인으로 자금을 모으는 데 도움을 드립니다.</p>
+                            <p><a class="btn" href="#" role="button">MORE INFO</a></p>
+                        </div>
+                    </section>
+                    <section class="overview" style="background-image: url(/images/dummy/img_visual.jpg)">
+                        <div class="container">
+                            <h2>EXPLORE PROJECTS,<br>EVERYWHERE #22222222</h2>
+                            <p>wawa ventures은 세계 최대의 기금을 조성하는 사이트로서<br>
+    개인, 기업 및 비영리 단체가 온라인으로 자금을 모으는 데 도움을 드립니다.</p>
+                            <p><a class="btn" href="#" role="button">MORE INFO</a></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="controls">
                     <div class="container">
-                        <h2>EXPLORE PROJECTS,<br>EVERYWHERE</h2>
-                        <p>wawa ventures은 세계 최대의 기금을 조성하는 사이트로서<br>
-개인, 기업 및 비영리 단체가 온라인으로 자금을 모으는 데 도움을 드립니다.</p>
-                        <p><a class="btn" href="#" role="button">MORE INFO</a></p>
+                        <a class="prev" href="#"><i class="icon-left-open-big"></i></a>
+                        <a class="next" href="#"><i class="icon-right-open-big"></i></a>
                     </div>
-                </section>
+                </div>
             </div>
             <section id="record">
                 <div class="container">
@@ -49,6 +65,7 @@
                             <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                         </div>
                     </div>
+                    <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                 </div>
             </section>
             <section id="popular">
@@ -76,6 +93,7 @@
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>
+                            <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="popular-category-2">
                             <div class="row">
@@ -92,6 +110,7 @@
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>
+                            <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="popular-category-3">
                             <div class="row">
@@ -108,6 +127,7 @@
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>
+                            <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="popular-category-4">
                             <div class="row">
@@ -124,6 +144,7 @@
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>
+                            <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                         </div>
                     </div>
                 </div>
@@ -165,13 +186,55 @@
                             </a>
                         </div>
                     </div>
+                    <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
                 </div>
             </section>
-            <!--
             <section id="sponsor">
-                <h2>스폰서</h2>
+                <div class="container">
+                    <h2 class="section-heading">스폰서</h2>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <!-- 이미지 정사각형으로 등록하기만 하면 됩니다 -->
+                            <figure>
+                                <img class="img-circle img-responsive" src="/images/dummy/img_sponsor_figure.jpg">
+                                <figcaption>
+                                    <strong>위정혁</strong>
+                                    <p>펀드 / 금융의 교차로에 성장 단계의 기업과 투자자를 선도하는 작업 25년 보냈다.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <figure>
+                                <img class="img-circle img-responsive" src="/images/dummy/img_sponsor_figure.jpg">
+                                <figcaption>
+                                    <strong>Yun Hyeok Yeo</strong>
+                                    <p>패트릭 핀은 핀 캐피털 파트너스의 매니 징 파트너입니다.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <figure>
+                                <img class="img-circle img-responsive" src="/images/dummy/img_sponsor_figure.jpg">
+                                <figcaption>
+                                    <strong>김다은</strong>
+                                    <p>초기 단계의 소비자 기업의 다양한 연산자, 투자자 및 이사회 멤버를 포함했다.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <figure>
+                                <img class="img-circle img-responsive" src="/images/dummy/img_sponsor_figure.jpg">
+                                <figcaption>
+                                    <strong>무브먼트케이</strong>
+                                    <p>무브먼트케이는 소비자 제품 브랜드를 구축 배경을 가진 혁신적인 기업입니다.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <a class="btn btn-default btn-sm btn-more" href="#">전체보기</a>
+                </div>
             </section>
-            -->
             <section id="begin">
                 <div class="container">
                     <h2>지금 바로 시작해보세요!</h2>
@@ -188,6 +251,8 @@
     </div>
     
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docjs.php'); ?>
+    <script src="/js/lib/jquery.bxslider.min.js"></script>
+    <script src="/js/app/main.js"></script>
     
 </body>
 </html>

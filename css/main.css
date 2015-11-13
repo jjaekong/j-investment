@@ -255,7 +255,7 @@
     #begin p:nth-of-type(2) > .btn:nth-of-type(1) {
       border-color: #fff;
       margin-bottom: 7px; }
-    #begin p:nth-of-type(2) > .btn:nth-of-type(2) {
+    #begin p:nth-of-type(2) > .btn:hover, #begin p:nth-of-type(2) > .btn:focus {
       border-color: #f36523;
       background-color: #f36523; }
     @media (min-width: 1200px) {

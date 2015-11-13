@@ -285,7 +285,7 @@
                 border-color: #fff;
                 margin-bottom: 7px;
             }
-            &:nth-of-type(2) {
+            &:hover, &:focus {
                 border-color: $main-color;
                 background-color: $main-color;
             }

@@ -42,6 +42,20 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
 .btn {
     box-shadow: none !important;
 }
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        > .row {
+            margin-left: -10px;
+            margin-right: -10px;
+            > div {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+}
 
 /*
 // 헤더
@@ -85,6 +99,30 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
                     margin-left: 3px;
                     margin-right: 3px;
                     color: $main-color;
+                }
+            }
+        }
+        > .search {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            form {
+                position: relative;
+                padding-right: 26px;
+                p {
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        border: 0;
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 26px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    background-color: #fff;
                 }
             }
         }
@@ -155,6 +193,9 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
         }
         .sns {
             margin-bottom: 30px;
+            @media (min-width: 1200px) {
+                margin-bottom: 0;
+            }
             > p {
                 text-align: center;
                 > a {

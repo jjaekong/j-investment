@@ -88,7 +88,7 @@
                     </ul>
                     <p class="copyright">© 2015 WAWA VENTURES. All rights reserved. <i>SITE BY MOVEMENTKGROUP.</i></p>
                 </div>
-                <div class="col-md-3 col-md-offset-1">
+                <div class="col-md-4">
                     <div class="sns">
                         <p>
                             <a class="facebook" href="#"><i class="icon-facebook"></i></a>

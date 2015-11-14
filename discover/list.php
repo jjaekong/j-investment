@@ -95,26 +95,26 @@
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="recommend-project">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 col-sm-6 col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 col-sm-6 col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 hidden-sm col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="popular-project">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
-                                <div class="col-xs-12 col-sm-4">
+                                <div class="col-xs-12 hidden-xs col-md-4">
                                     <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                                 </div>
                             </div>

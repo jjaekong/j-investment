@@ -4,6 +4,7 @@
     <link href="/css/main.css" rel="stylesheet">
 </head>
 <body class="main">
+    <a href="#content" class="skip sr-only sr-only-focusable">컨텐츠로 건너뛰기</a>
     <div id="wrapper">
         <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
         <main id="content">
@@ -28,8 +29,8 @@
                 </div>
                 <div class="controls">
                     <div class="container">
-                        <a class="prev" href="#"><i class="icon-left-open-big"></i></a>
-                        <a class="next" href="#"><i class="icon-right-open-big"></i></a>
+                        <a class="prev" href="#" role="button"><i class="icon-left-open-big"></i></a>
+                        <a class="next" href="#" role="button"><i class="icon-right-open-big"></i></a>
                     </div>
                 </div>
             </div>
@@ -53,7 +54,9 @@
             </section>
             <section id="recommend">
                 <div class="container">
-                    <h2 class="section-heading">추천 프로젝트</h2>
+                    <div class="section-header">
+                        <h2 class="section-title">추천 프로젝트</h2>
+                    </div>
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
@@ -70,7 +73,9 @@
             </section>
             <section id="popular">
                 <div class="container">
-                    <h2 class="section-heading">인기 프로젝트</h2>
+                    <div class="section-header">
+                        <h2 class="section-title">인기 프로젝트</h2>
+                    </div>
                     <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#popular-category-1" aria-controls="popular-category-1" role="tab" data-toggle="tab">기술</a></li>
                         <li role="presentation"><a href="#popular-category-2" aria-controls="popular-category-2" role="tab" data-toggle="tab">바이오/의료</a></li>
@@ -151,7 +156,9 @@
             </section>
             <section id="category">
                 <div class="container">
-                    <h2 class="section-heading">카테고리</h2>
+                    <div class="section-header">
+                        <h2 class="section-title">카테고리</h2>
+                    </div>
                     <div class="row">
                         <div class="col-xs-3">
                             <a href="#">
@@ -191,7 +198,9 @@
             </section>
             <section id="sponsor">
                 <div class="container">
-                    <h2 class="section-heading">스폰서</h2>
+                    <div class="section-header">
+                        <h2 class="section-title">스폰서</h2>
+                    </div>
                     <div class="row">
                         <div class="col-xs-6 col-sm-3">
                             <!-- 이미지 정사각형으로 등록하기만 하면 됩니다 -->

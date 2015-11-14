@@ -83,13 +83,14 @@
                 top: -290px;
                 width: 70px;
                 height: 70px;
-                line-height: 70px;
+                line-height: 75px;
                 text-align: center;
                 z-index: 51;
-                font-size: 30px;
+                font-size: 40px;
                 color: #fff;
                 background-color: #000;
                 opacity: .5;
+                text-decoration: none;
             }
             .prev {
                 left: -185px;
@@ -181,42 +182,6 @@
 #popular {
     .container {
         position: relative;
-    }
-    .nav-tabs {
-        border-bottom: 0;
-        margin-bottom: 15px;
-        > li {
-            margin-right: 20px;
-            margin-bottom: 0;
-            > a {
-                padding-top: 3px;
-                padding-bottom: 3px;
-                padding-left: 0;
-                padding-right: 0;
-                border-top: 0;
-                border-left: 0;
-                border-right: 0;
-                margin: 0;
-                @include font(13px, 20px);
-                color: $font-color;
-                border-bottom: 2px solid transparent;
-                &:hover,
-                &:focus {
-                    background-color: transparent;
-                }
-                @media (min-width: 768px) {
-                    font-size: 15px;
-                }
-            }
-            &.active {
-                > a {
-                    border-top: 0;
-                    border-left: 0;
-                    border-right: 0;
-                    border-bottom-color: $main-color;
-                }
-            }
-        }
     }
 }
 

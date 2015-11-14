@@ -8,10 +8,12 @@
     
     $(document).on('click', '#introduce .controls .next', function() {
         IntroSlider.goToNextSlide();
+        return false;
     });
     
     $(document).on('click', '#introduce .controls .prev', function() {
         IntroSlider.goToPrevSlide();
+        return false;
     });    
     
 })(jQuery);

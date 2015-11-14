@@ -1,4 +1,4 @@
-<article class="project">
+<article class="project-item">
     <a href="#">
         <div class="status">
             <img src="/images/ico_success.png" alt="도전성공">

@@ -23,35 +23,47 @@ ol, ul {
     list-style: none;
     padding-left: 0;
 }
-p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
+p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
     margin-top: 0;
     margin-bottom: 0;
 }
-.section-heading {
+.section-header {
     margin-top: 30px;
     margin-bottom: 15px;
-    font-size: 18px;
-    line-height: 20px;
-    color: $main-color;
-    font-weight: bold;
     @media (min-width: 768px) {
         margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 28px;
     }
     @media (min-width: 1200px) {
         margin-top: 40px;
         margin-bottom: 25px;
     }
+    .section-title {
+        font-size: 18px;
+        line-height: 20px;
+        color: $main-color;
+        font-weight: bold;
+        @media (min-width: 768px) {
+            font-size: 25px;
+            line-height: 28px;
+        }
+    }
 }
 .btn {
     box-shadow: none !important;
+}
+.btn-primary {
+    background-color: $main-color;
+    border-color: $main-color;
+    &:hover, &:focus {
+        background-color: $main-color;
+        border-color: $main-color;
+    }
 }
 @media (max-width: 768px) {
     .container {
         padding-left: 10px;
         padding-right: 10px;
-        > .row {
+        .row {
             margin-left: -10px;
             margin-right: -10px;
             > div {
@@ -61,29 +73,85 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
         }
     }
 }
+#content .nav-tabs {
+    border-bottom: 0;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+         margin-bottom: 15px;
+    }
+    > li {
+        margin-right: 15px;
+        margin-bottom: 10px;
+        @media (min-width: 768px) {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+        > a {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 0;
+            padding-right: 0;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            margin: 0;
+            @include font(13px, 20px);
+            color: $font-color;
+            border-bottom: 2px solid transparent;
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+            @media (min-width: 768px) {
+                font-size: 15px;
+            }
+        }
+        &.active {
+            > a {
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom-color: $main-color;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
 
-/*
+// 스킵네비게이션
+body > .skip:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    @include font(15px, 35px);
+    text-align: center;
+    background-color: $main-color;
+    color: #fff;
+    z-index: 9999;
+}
+
 // 헤더
- */
 #header {
     border-bottom: 1px solid #ccc;
     .logo {
         text-align: center;
         img {
             display: block;
-            margin: 0 auto;
+            margin: 13px auto;
         }
-    }
-    a {
-        color: #333;
-        text-decoration: none;
-        font-size: 14px;
     }
     .row {
         > div {
+            /*
             padding-top: 13px;
             padding-bottom: 13px;
             line-height: 33px;
+            */
+            height: 59px;
             &:first-child {
                 border-bottom: 1px solid #ccc;
                 @media (min-width: 768px) {
@@ -96,37 +164,57 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
                 line-height: 0;
             }
         }
+        > .discover,
+        > .start {
+            p {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                > a {
+                    color: #333;
+                    @include font(14px, 19px);
+                }
+            }
+        }
         > .membership {
             border-left: 1px solid #ccc;
             > p {
                 text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
                 > a {
                     margin-left: 3px;
                     margin-right: 3px;
                     color: $main-color;
+                    @include font(14px, 19px);
                 }
             }
         }
         > .search {
             border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
             form {
                 position: relative;
-                padding-right: 26px;
+                height: 59px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-right: 36px;
+                border-right: 1px solid #ccc;
                 p {
                     width: 100%;
                     input {
                         width: 100%;
+                        height: 29px;
                         border: 0;
+                        line-height: 31px;
                     }
                 }
                 button {
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: 15px;
+                    right: 10px;
                     width: 26px;
-                    padding-left: 0;
-                    padding-right: 0;
+                    height: 29px;
+                    padding: 0;
                     background-color: #fff;
                 }
             }
@@ -228,9 +316,9 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-// 프로젝트
+// 프로젝트 아이템
  */
-.project {
+.project-item {
     margin-bottom: 10px;
     a {
         position: relative;
@@ -345,6 +433,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0;
         box-shadow: none;
         border-radius: 0;
+        background-color: #c4c4c4;
         > .progress-bar {
             font-size: 15px;
             line-height: 38px;
@@ -361,5 +450,59 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6 {
         width: 100%;
         height: 100%;
         border-radius: 10px;
+    }
+}
+
+// 페이지 네비
+.path {
+    margin-top: 20px;
+    .container {
+        text-align: right;
+    }
+    ol {
+        > li {
+            display: inline-block;
+            color: #888;
+            @include font(12px, 14px);
+            > a {
+                color: #888;
+            }
+        }
+    }
+}
+
+// 페이지네이션
+.paging {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 100px;
+    }
+    .pagination {
+        margin-top: 0;
+        margin-bottom: 0;
+        > li {
+            > a {
+                padding-left: 8px;
+                padding-right: 8px;
+                border: 0;
+                color: #888;
+                &:hover, &:focus, &.active {
+                    background-color: transparent;
+                    color: $main-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .first, .prev, .next, .last {
+            > a {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
     }
 }

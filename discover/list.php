@@ -7,11 +7,11 @@
     <a href="#content" class="skip sr-only sr-only-focusable">컨텐츠로 건너뛰기</a>
     <div id="wrapper">
         <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
-        <main id="content">
+        <main id="content" class="list">
             <div class="category">
                 <div class="container">
                     <ul class="row">
-                        <li class="col-xs-4 col-sm-2"><a href="#">기술</a></li>
+                        <li class="col-xs-4 col-sm-2"><a class="active" href="#">기술</a></li>
                         <li class="col-xs-4 col-sm-2"><a href="#">바이오/의료</a></li>
                         <li class="col-xs-4 col-sm-2"><a href="#">뷰티/건강</a></li>
                         <li class="col-xs-4 col-sm-2"><a href="#">게임</a></li>
@@ -26,17 +26,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="path hidden-xs">
-                <div class="container">
-                    <ol>
-                        <li><a href="#"><i class="icon-home"></i></a></li>
-                        <li role="separator" class="arrow"><i class="icon-left-open-big"></i></li>
-                        <li><a href="#">프로젝트 발견하기</a></li>
-                        <li role="separator" class="arrow"><i class="icon-left-open-big"></i></li>
-                        <li>기술</li>
-                    </ol>
-                </div>
-            </div>
+            <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/path.php'); ?>
             <section class="major">
                 <div class="container">
                     <div class="section-header">

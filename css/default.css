@@ -42,6 +42,11 @@ html, body {
       font-size: 14px;
       line-height: 22px; } }
 
+a {
+  color: #666; }
+  a:hover, a:focus {
+    color: #666; }
+
 ol, ul {
   list-style: none;
   padding-left: 0; }
@@ -76,7 +81,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
 .btn-primary {
   background-color: #f36523;
   border-color: #f36523; }
-  .btn-primary:hover, .btn-primary:focus {
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active:hover {
     background-color: #f36523;
     border-color: #f36523; }
 

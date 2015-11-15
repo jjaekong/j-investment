@@ -1,4 +1,4 @@
-.font-roboto {
+.font-roboto, #content.view .stats .goal .rate, #content.view .stats .goal .money h3, #content.view .stats .involved strong, #content.view .stats .remain strong, #content.view .reward-item .price strong i, #content.view .reward-item .involved strong i {
   font-family: 'Roboto', sans-serif; }
 
 /*
@@ -28,15 +28,15 @@
     .section-header {
       margin-top: 10px; } }
 
-.category {
+#content.list .category {
   padding-top: 20px;
   padding-bottom: 15px;
   background-color: #f36523; }
   @media (min-width: 768px) {
-    .category {
+    #content.list .category {
       padding-top: 30px;
       padding-bottom: 20px; } }
-  .category li > a {
+  #content.list .category li > a {
     display: block;
     height: 30px;
     padding-top: 5px;
@@ -47,29 +47,28 @@
     line-height: 20px;
     color: #fff; }
     @media (min-width: 768px) {
-      .category li > a {
+      #content.list .category li > a {
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 10px; } }
-    .category li > a:hover, .category li > a:focus {
+    #content.list .category li > a:hover, #content.list .category li > a:focus, #content.list .category li > a.active {
       background-color: #fff;
       color: #f36523;
       text-decoration: none; }
-
-.search-area {
+#content.list .search-area {
   border: 1px solid #ccc;
   margin-bottom: 40px; }
-  .search-area header {
+  #content.list .search-area header {
     position: relative;
     height: 45px;
     padding: 10px 20px;
     background-color: #f7f7f7; }
-    .search-area header h4 {
+    #content.list .search-area header h4 {
       font-size: 14px;
       line-height: 25px;
       color: #333; }
-    .search-area header .btn {
+    #content.list .search-area header .btn {
       position: absolute;
       top: 6px;
       right: 0;
@@ -77,14 +76,14 @@
       text-decoration: none;
       font-size: 13px;
       line-height: 20px; }
-  .search-area .form-wrap {
+  #content.list .search-area .form-wrap {
     display: none;
     padding: 10px 20px;
     border-top: 1px solid #ccc; }
     @media (min-width: 768px) {
-      .search-area .form-wrap {
+      #content.list .search-area .form-wrap {
         padding: 20px 20px 5px; } }
-    .search-area .form-wrap .row > label {
+    #content.list .search-area .form-wrap .row > label {
       position: relative;
       padding-left: 10px;
       margin-top: 10px;
@@ -92,10 +91,10 @@
       text-indent: 10px;
       font-size: 13px; }
       @media (min-width: 768px) {
-        .search-area .form-wrap .row > label {
+        #content.list .search-area .form-wrap .row > label {
           margin-top: 5px;
           text-indent: 15px; } }
-      .search-area .form-wrap .row > label > .dot {
+      #content.list .search-area .form-wrap .row > label > .dot {
         position: absolute;
         left: 10px;
         top: 40%;
@@ -103,36 +102,411 @@
         height: 3px;
         background-color: #f36523; }
         @media (min-width: 768px) {
-          .search-area .form-wrap .row > label > .dot {
+          #content.list .search-area .form-wrap .row > label > .dot {
             left: 15px; } }
-    .search-area .form-wrap .row > div {
+    #content.list .search-area .form-wrap .row > div {
       margin-bottom: 10px; }
       @media (min-width: 768px) {
-        .search-area .form-wrap .row > div {
+        #content.list .search-area .form-wrap .row > div {
           margin-bottom: 15px; } }
-  .search-area.opened .form-wrap {
+  #content.list .search-area.opened .form-wrap {
     display: block; }
-
-.list {
+#content.list .list {
   position: relative;
   border-top: 1px solid #dfdfdf;
   margin-top: 30px;
   margin-bottom: 10px; }
-  .list h4 {
+  #content.list .list h4 {
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 16px;
     font-size: 20px; }
-    .list h4 > strong {
+    #content.list .list h4 > strong {
       color: #f36523; }
     @media (min-width: 1200px) {
-      .list h4 {
+      #content.list .list h4 {
         margin-top: 60px;
         margin-bottom: 30px; } }
   @media (min-width: 1200px) {
-    .list .nav-tabs {
+    #content.list .list .nav-tabs {
       position: absolute;
       top: 56px;
       right: 0; } }
+
+#content.view .overview {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    #content.view .overview {
+      margin-top: 70px;
+      margin-bottom: 70px; } }
+  #content.view .overview h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333; }
+    @media (min-width: 1200px) {
+      #content.view .overview h2 {
+        font-size: 35px;
+        line-height: 44px; } }
+  #content.view .overview p {
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 18px; }
+    @media (min-width: 1200px) {
+      #content.view .overview p {
+        margin-bottom: 35px;
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 15px;
+        line-height: 25px; } }
+  #content.view .overview .tags > li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #888;
+    font-size: 12px; }
+    @media (min-width: 1200px) {
+      #content.view .overview .tags > li {
+        font-size: 13px; } }
+#content.view .figure {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+  background-color: #000; }
+  @media (min-width: 768px) {
+    #content.view .figure {
+      margin-left: 0;
+      margin-right: 0; } }
+  #content.view .figure ul > li > img {
+    width: 100%; }
+  #content.view .figure .controls > a {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #fff; }
+    #content.view .figure .controls > a.prev {
+      left: 0; }
+    #content.view .figure .controls > a.next {
+      right: 0; }
+#content.view .stats {
+  border: 8px solid #e1e1e1;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  @media (min-width: 1200px) {
+    #content.view .stats {
+      margin-top: 0;
+      margin-bottom: 30px; } }
+  #content.view .stats .goal {
+    position: relative;
+    padding: 13px 13px 20px;
+    border-bottom: 1px solid #e9e9e9;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      #content.view .stats .goal {
+        padding: 15px 10px; } }
+    #content.view .stats .goal .rate {
+      display: inline-block;
+      width: 87px;
+      height: 87px;
+      margin-right: 10px;
+      font-size: 30px;
+      line-height: 87px;
+      letter-spacing: -1px;
+      color: #f36523;
+      vertical-align: top;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      #content.view .stats .goal .rate.rate-100 {
+        background-image: url(/images/discover/ico_circle_rate_100.gif); }
+      #content.view .stats .goal .rate.rate-90 {
+        background-image: url(/images/discover/ico_circle_rate_90.gif); }
+      #content.view .stats .goal .rate.rate-80 {
+        background-image: url(/images/discover/ico_circle_rate_80.gif); }
+      #content.view .stats .goal .rate.rate-70 {
+        background-image: url(/images/discover/ico_circle_rate_70.gif); }
+      #content.view .stats .goal .rate.rate-60 {
+        background-image: url(/images/discover/ico_circle_rate_60.gif); }
+      #content.view .stats .goal .rate.rate-50 {
+        background-image: url(/images/discover/ico_circle_rate_50.gif); }
+      #content.view .stats .goal .rate.rate-40 {
+        background-image: url(/images/discover/ico_circle_rate_40.gif); }
+      #content.view .stats .goal .rate.rate-30 {
+        background-image: url(/images/discover/ico_circle_rate_30.gif); }
+      #content.view .stats .goal .rate.rate-20 {
+        background-image: url(/images/discover/ico_circle_rate_20.gif); }
+      #content.view .stats .goal .rate.rate-10 {
+        background-image: url(/images/discover/ico_circle_rate_10.gif); }
+      #content.view .stats .goal .rate.rate-0 {
+        background-image: url(/images/discover/ico_circle_rate_0.gif); }
+      #content.view .stats .goal .rate > small {
+        font-size: 15px;
+        color: #999; }
+      @media (min-width: 1200px) {
+        #content.view .stats .goal .rate {
+          width: 123px;
+          height: 123px;
+          font-size: 35px;
+          line-height: 123px; } }
+    #content.view .stats .goal .money {
+      display: inline-block; }
+      #content.view .stats .goal .money h3 {
+        margin-top: 10px;
+        color: #f36523;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -1px; }
+        #content.view .stats .goal .money h3 > small {
+          font-size: 18px;
+          color: #f36523; }
+        @media (min-width: 1200px) {
+          #content.view .stats .goal .money h3 {
+            margin-top: 20px;
+            font-size: 30px;
+            line-height: 50px; } }
+      #content.view .stats .goal .money p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #333; }
+        @media (min-width: 1200px) {
+          #content.view .stats .goal .money p {
+            font-size: 15px; } }
+  #content.view .stats .involved {
+    border-right: 1px solid #e9e9e9; }
+  #content.view .stats .involved, #content.view .stats .remain {
+    float: left;
+    width: 50%; }
+    #content.view .stats .involved dl, #content.view .stats .remain dl {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center; }
+      @media (min-width: 1200px) {
+        #content.view .stats .involved dl, #content.view .stats .remain dl {
+          padding-top: 15px;
+          padding-bottom: 15px; } }
+    #content.view .stats .involved dt, #content.view .stats .involved dd, #content.view .stats .remain dt, #content.view .stats .remain dd {
+      font-size: 12px;
+      line-height: 30px;
+      display: inline-block; }
+      @media (min-width: 1200px) {
+        #content.view .stats .involved dt, #content.view .stats .involved dd, #content.view .stats .remain dt, #content.view .stats .remain dd {
+          font-size: 13px; } }
+    #content.view .stats .involved strong, #content.view .stats .remain strong {
+      position: relative;
+      top: 3px;
+      font-size: 20px;
+      line-height: 30px; }
+      @media (min-width: 1200px) {
+        #content.view .stats .involved strong, #content.view .stats .remain strong {
+          font-size: 25px; } }
+  #content.view .stats .period {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #e9e9e9;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      #content.view .stats .period {
+        font-size: 13px; } }
+    #content.view .stats .period dt, #content.view .stats .period dd {
+      display: inline-block;
+      font-weight: normal; }
+#content.view .btn-involved {
+  margin-bottom: 10px;
+  line-height: 28px; }
+  @media (min-width: 1200px) {
+    #content.view .btn-involved {
+      margin-bottom: 30px;
+      line-height: 48px; } }
+#content.view .profile {
+  overflow: hidden;
+  margin-bottom: 50px; }
+  #content.view .profile .picture {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-image: url(/images/ico_profile_default.gif);
+    background-position: 50% 50%;
+    background-size: cover; }
+    @media (min-width: 768px) {
+      #content.view .profile .picture {
+        width: 70px;
+        height: 70px; } }
+  #content.view .profile .author {
+    padding: 15px;
+    height: 50px;
+    border: 1px solid #dfdfdf;
+    margin-left: 60px;
+    font-size: 13px;
+    line-height: 20px; }
+    @media (min-width: 768px) {
+      #content.view .profile .author {
+        height: 70px;
+        margin-left: 80px; } }
+    @media (min-width: 1200px) {
+      #content.view .profile .author {
+        margin-left: 90px; } }
+    #content.view .profile .author strong {
+      color: #333; }
+    #content.view .profile .author ul {
+      display: inline; }
+      #content.view .profile .author ul li {
+        display: inline; }
+        #content.view .profile .author ul li a {
+          color: #c7c7c7; }
+    #content.view .profile .author p {
+      display: none; }
+      @media (min-width: 768px) {
+        #content.view .profile .author p {
+          overflow: hidden;
+          display: block;
+          font-size: 12px;
+          line-height: 18px;
+          color: #888;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
+#content.view .nav-tabs > li {
+  display: table-cell;
+  width: 1%;
+  margin-right: 0;
+  margin-bottom: 0; }
+  #content.view .nav-tabs > li > a {
+    border-bottom: 1px solid #ccc;
+    border-radius: 0; }
+  #content.view .nav-tabs > li.active > a {
+    position: relative;
+    top: -1px;
+    border-bottom: 2px solid #f36523; }
+#content.view .reward h3 {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 20px; }
+  @media (min-width: 768px) {
+    #content.view .reward h3 {
+      font-size: 15px;
+      line-height: 25px; } }
+  @media (min-width: 1200px) {
+    #content.view .reward h3 {
+      margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 30px; } }
+#content.view .reward-item {
+  margin-bottom: 10px; }
+  #content.view .reward-item > a {
+    position: relative;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-decoration: none; }
+    #content.view .reward-item > a:hover .price strong i, #content.view .reward-item > a:focus .price strong i {
+      color: #f36523; }
+    #content.view .reward-item > a:hover .involved, #content.view .reward-item > a:focus .involved {
+      background-color: #f36523; }
+    #content.view .reward-item > a:hover .outline, #content.view .reward-item > a:focus .outline {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      bottom: -1px;
+      border: 2px solid #f36523; }
+    @media (min-width: 1200px) {
+      #content.view .reward-item > a {
+        padding: 25px; } }
+  #content.view .reward-item .price {
+    font-size: 25px; }
+    #content.view .reward-item .price strong {
+      color: #333; }
+      #content.view .reward-item .price strong i {
+        font-style: normal;
+        font-size: 25px;
+        line-height: 30px; }
+      #content.view .reward-item .price strong small {
+        position: relative;
+        top: -2px;
+        color: #666;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: normal; }
+  #content.view .reward-item .involved {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 26px;
+    background-color: #aaa;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      #content.view .reward-item .involved {
+        top: 25px;
+        right: 25px; } }
+    #content.view .reward-item .involved strong {
+      color: #fff;
+      font-weight: normal; }
+      #content.view .reward-item .involved strong i {
+        font-style: normal;
+        font-size: 15px;
+        line-height: 26px; }
+      #content.view .reward-item .involved strong small {
+        position: relative;
+        top: -1px;
+        font-size: 13px;
+        line-height: 26px; }
+  #content.view .reward-item .summary {
+    margin-top: 15px; }
+    #content.view .reward-item .summary h5 {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold;
+      color: #333; }
+    #content.view .reward-item .summary p {
+      font-size: 13px;
+      line-height: 20px; }
+  #content.view .reward-item .limit {
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    margin-top: 10px; }
+    #content.view .reward-item .limit li {
+      position: relative;
+      padding-left: 7px; }
+      #content.view .reward-item .limit li .dot {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #666; }
+    #content.view .reward-item .limit dt, #content.view .reward-item .limit dd {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: normal; }
+#content.view .caution {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  @media (min-width: 1200px) {
+    #content.view .caution {
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+#content.view .btn-area {
+  margin-bottom: 50px; }
+  #content.view .btn-area .btn {
+    line-height: 31px; }
+    #content.view .btn-area .btn.btn-default {
+      border-color: #e1e1e1;
+      background-color: #e1e1e1; }
+    @media (min-width: 1200px) {
+      #content.view .btn-area .btn {
+        line-height: 41px; } }
 
 /*# sourceMappingURL=discover.css.map */

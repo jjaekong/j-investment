@@ -1,7 +1,7 @@
 (function($) {
     
     // 검색 영역 토글
-    $(document).on('click', '.search-area header .btn', function() {
+    $(document).on('click', '#content.list .search-area header .btn', function() {
         var $area = $(this).parents('.search-area:eq(0)');
         if ($area.hasClass('opened')) {
             $area.removeClass('opened');
@@ -12,5 +12,22 @@
         }
         return;
     });
+    
+    // 뷰페이지 이미지 슬라이드
+    var FigureSlider = $('#content.view .figure ul').bxSlider({
+        pager: false,
+        controls: false,
+        //adaptiveHeight: true
+    });
+    
+    $(document).on('click', '#content.view .figure .controls .next', function() {
+        FigureSlider.goToNextSlide();
+        return false;
+    });
+    
+    $(document).on('click', '#content.view .figure .controls .prev', function() {
+        FigureSlider.goToPrevSlide();
+        return false;
+    });   
     
 })(jQuery);

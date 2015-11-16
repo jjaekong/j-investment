@@ -1,0 +1,28 @@
+@import 'common';
+
+// 게시판 공통
+.board {
+    .table-responsive {
+        border-left: 0;
+        border-right: 0;
+    }
+    .table {
+        th {
+            height: 43px;
+            background-color: #fafafa;
+            text-align: center;
+            @include font(14px, 27px);
+        }
+        td {
+            height: 40px;
+            text-align: center;
+            @include font(13px, 24px);
+        }
+        thead th {
+            border-bottom-width: 1px;
+        }
+    }
+    .text-left {
+        text-align: left !important;
+    }
+}

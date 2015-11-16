@@ -1,0 +1,44 @@
+.font-roboto {
+  font-family: 'Roboto', sans-serif; }
+
+/*
+.font-13px {
+    font-size: 13px;
+    line-height: 20px;
+}
+.font-14px {
+    font-size: 14px;
+    line-height: 22px;
+}
+.font-15px {
+    font-size: 15px;
+    line-height: 25px;
+}
+*/
+.icon-circle {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center; }
+  .icon-circle > i {
+    font-size: 85%; }
+
+.board .table-responsive {
+  border-left: 0;
+  border-right: 0; }
+.board .table th {
+  height: 43px;
+  background-color: #fafafa;
+  text-align: center;
+  font-size: 14px;
+  line-height: 27px; }
+.board .table td {
+  height: 40px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px; }
+.board .table thead th {
+  border-bottom-width: 1px; }
+.board .text-left {
+  text-align: left !important; }
+
+/*# sourceMappingURL=board.css.map */

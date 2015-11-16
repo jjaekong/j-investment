@@ -240,37 +240,37 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 &.rate-100 {
-                    background-image: url(/images/discover/ico_circle_rate_100.gif);
+                    background-image: url(/images/discover/img_circle_rate_10.png);
                 }
                 &.rate-90 {
-                    background-image: url(/images/discover/ico_circle_rate_90.gif);
+                    background-image: url(/images/discover/img_circle_rate_90.png);
                 }
                 &.rate-80 {
-                    background-image: url(/images/discover/ico_circle_rate_80.gif);
+                    background-image: url(/images/discover/img_circle_rate_80.png);
                 }
                 &.rate-70 {
-                    background-image: url(/images/discover/ico_circle_rate_70.gif);
+                    background-image: url(/images/discover/img_circle_rate_70.png);
                 }
                 &.rate-60 {
-                    background-image: url(/images/discover/ico_circle_rate_60.gif);
+                    background-image: url(/images/discover/img_circle_rate_60.png);
                 }
                 &.rate-50 {
-                    background-image: url(/images/discover/ico_circle_rate_50.gif);
+                    background-image: url(/images/discover/img_circle_rate_50.png);
                 }
                 &.rate-40 {
-                    background-image: url(/images/discover/ico_circle_rate_40.gif);
+                    background-image: url(/images/discover/img_circle_rate_40.png);
                 }
                 &.rate-30 {
-                    background-image: url(/images/discover/ico_circle_rate_30.gif);
+                    background-image: url(/images/discover/img_circle_rate_30.png);
                 }
                 &.rate-20 {
-                    background-image: url(/images/discover/ico_circle_rate_20.gif);
+                    background-image: url(/images/discover/img_circle_rate_20.png);
                 }
                 &.rate-10 {
-                    background-image: url(/images/discover/ico_circle_rate_10.gif);
+                    background-image: url(/images/discover/img_circle_rate_10.png);
                 }
                 &.rate-0 {
-                    background-image: url(/images/discover/ico_circle_rate_0.gif);
+                    background-image: url(/images/discover/img_circle_rate_0.png);
                 }
                 > small {
                     @include font(15px);
@@ -419,6 +419,10 @@
         }
     }
     .nav-tabs {
+        margin-bottom: 25px;
+        @media (min-width: 1200px) {
+            margin-bottom: 30px;
+        }
         > li {
             display: table-cell;
             width: 1%;
@@ -427,7 +431,12 @@
             > a {
                 border-bottom: 1px solid #ccc;
                 border-radius: 0;
-                
+                padding-top: 5px;
+                padding-bottom: 5px;
+                @media (min-width: 1200px) {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
             }
             &.active {
                 > a {
@@ -572,7 +581,7 @@
             margin-bottom: 25px;
         }
     }
-    .btn-area {
+    .ask {
         margin-bottom: 50px;
         .btn {
             line-height: 31px;
@@ -582,6 +591,112 @@
             }
             @media (min-width: 1200px) {
                 line-height: 41px;
+            }
+        }
+    }
+    .cheer, .help-desk {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 45px;
+        border-top: 1px solid #dfdfdf;
+        h5 {
+            margin-bottom: 15px;
+            @include font(25px);
+            color: #333;
+        }
+        p {
+            @include font(14px, 22px);
+        }
+        .btn {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            @include font(14px, 24px);
+            &.btn-default {
+                border: 0;
+                background-color: #e1e1e1;
+            }
+        }
+    }
+    .cheer {
+        margin-top: 80px;
+    }
+    .help-desk {
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 100px;
+    }
+    #process {
+        iframe {
+            overflow: hidden;
+            border: 0;
+        }
+    }
+    #sponsors {
+        .score {
+            margin-bottom: 5px;
+            text-align: right;
+            color: #333;
+            @media (min-width: 1200px) {
+                margin-bottom: 15px;
+            }
+            > i {
+                font-style: normal;
+                color: $main-color;
+                font-weight: bold;
+            }
+        }
+        .sponsor {
+            margin-bottom: 10px;
+            @media (min-width: 1200px) {
+                margin-bottom: 20px;
+            }
+            .picture {
+                float: left;
+                width: 50px;
+                height: 50px;
+                background-image: url(/images/ico_profile_default.gif);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                @media (min-width: 1200px) {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .info {
+                margin-left: 50px;
+                padding-left: 10px;
+                @media (min-width: 1200px) {
+                    margin-left: 70px;
+                    padding-left: 20px;
+                }
+                > div {
+                    position: relative;
+                    padding: 10px;
+                    border: 1px solid #dfdfdf;
+                    @media (min-width: 1200px) {
+                        height: 70px;
+                        padding: 13px 20px;
+                    }
+                }
+                strong {
+                    color: #333;
+                }
+                p {
+                    color: #888;
+                }
+                dl {
+                    color: #888;
+                    dt, dd {
+                        display: inline;
+                        @include font(13px, 20px, normal);
+                    }
+                    @media (min-width: 1200px) {
+                        position: absolute;
+                        top: 25px;
+                        right: 20px;
+                    }
+                }
             }
         }
     }

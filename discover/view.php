@@ -88,28 +88,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix visible-sm-block"></div>
                     <div class="col-sm-12 col-md-8">
                         <ul class="nav nav-tabs nav-justified" role="tablist">
                             <li role="presentation" class="active"><a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab"><span class="hidden-xs">프로젝트 </span>소개</a></li>
                             <li role="presentation"><a href="#process" aria-controls="process" role="tab" data-toggle="tab">진행과정(10)</a></li>
-                            <li role="presentation"><a href="#sponsor" aria-controls="sponsor" role="tab" data-toggle="tab">후원자(220)</a></li>
+                            <li role="presentation"><a href="#sponsors" aria-controls="sponsors" role="tab" data-toggle="tab">후원자(220)</a></li>
                             <li role="presentation"><a href="#comment" aria-controls="comments" role="tab" data-toggle="tab">댓글(502)</a></li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="introduce">
+                            <div role="tabpanel" class="tab-pane" id="introduce">
                                 <img style="margin: 20px auto;" class="img-responsive" src="/images/dummy/img_project_intro.jpg">
                             </div>
                             <div role="tabpanel" class="tab-pane" id="process">
-                                프로젝트 진행과정
+                                <iframe id="process-frame" src="/board/list.php" width="100%" scrolling="no"></iframe>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="sponsor">
-                                프로젝트 후원자
+                            <div role="tabpanel" class="tab-pane active" id="sponsors">
+                                <p class="score">현재 <i>6</i>명이 후원하고 있습니다.</p>
+                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/paging.php'); ?>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="comment">
                                 프로젝트 댓글
                             </div>
                         </div>
+                        <section class="visible-lg-block cheer">
+                            <h5>응원하기</h5>
+                            <p>프로젝트 개설자에게 응원의 메세지를 보내주세요!<br>여러분의 응원이 큰 힘이 됩니다.</p>
+                            <a href="#" class="btn btn-primary btn-lg">응원하러 바로가기</a>
+                        </section>
+                        <section class="visible-lg-block help-desk">
+                            <h5>고객센터</h5>
+                            <p>프로젝트에 관한 궁금한 사항이 있으신가요?<br>JLK에서 친절히 상담해 드리겠습니다.</p>
+                            <a href="#" class="btn btn-default btn-lg">고객센터 바로가기</a>
+                        </section>
                     </div>
                     <div class="col-sm-12 col-md-4">
                         <section class="reward">
@@ -121,7 +134,7 @@
 되지 않습니다. 본 프로젝트는 <strong>정식 체결</strong>되었음을 알려드립니다.</p>
                             </div>
                         </section>
-                        <div class="btn-area">
+                        <div class="ask">
                             <div class="row">
                                 <div class="col-xs-6">
                                     <a href="#" class="btn btn-primary btn-bg btn-block">문의하기</a>
@@ -132,9 +145,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="clearfix visible-md-block"></div>
-                    <div class="hidden-xs hidden-sm col-md-8">
-                    </div>
                 </div>
             </div>
         </main>
@@ -142,7 +152,6 @@
     </div>
     
     <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/docjs.php'); ?>
-    <script src="/js/lib/jquery.fitvids.js"></script>
     <script src="/js/lib/jquery.bxslider.js"></script>
     <script src="/js/app/discover.js"></script>
     

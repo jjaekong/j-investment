@@ -14,20 +14,22 @@
     });
     
     // 뷰페이지 이미지 슬라이드
-    var FigureSlider = $('#content.view .figure ul').bxSlider({
-        pager: false,
-        controls: false,
-        //adaptiveHeight: true
-    });
-    
-    $(document).on('click', '#content.view .figure .controls .next', function() {
-        FigureSlider.goToNextSlide();
-        return false;
-    });
-    
-    $(document).on('click', '#content.view .figure .controls .prev', function() {
-        FigureSlider.goToPrevSlide();
-        return false;
-    });   
+    if ($('#content.view .figure ul').length > 0) {
+        var FigureSlider = $('#content.view .figure ul').bxSlider({
+            pager: false,
+            controls: false,
+            //adaptiveHeight: true
+        });
+
+        $(document).on('click', '#content.view .figure .controls .next', function() {
+            FigureSlider.goToNextSlide();
+            return false;
+        });
+
+        $(document).on('click', '#content.view .figure .controls .prev', function() {
+            FigureSlider.goToPrevSlide();
+            return false;
+        });
+    }
     
 })(jQuery);

@@ -24,21 +24,87 @@
 
 .board .table-responsive {
   border-left: 0;
+  border-right: 0;
+  margin-bottom: 0; }
+.board .table-bordered {
+  border-left: 0;
   border-right: 0; }
-.board .table th {
-  height: 43px;
-  background-color: #fafafa;
-  text-align: center;
-  font-size: 14px;
-  line-height: 27px; }
-.board .table td {
-  height: 40px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 24px; }
-.board .table thead th {
-  border-bottom-width: 1px; }
+.board .table {
+  margin-bottom: 0; }
+  .board .table th {
+    position: relative;
+    height: 43px;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 14px;
+    line-height: 27px; }
+    .board .table th:first-child {
+      border-left: 0; }
+    .board .table th:last-child {
+      border-right: 0; }
+  .board .table td {
+    height: 40px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px; }
+    .board .table td:first-child {
+      border-left: 0; }
+    .board .table td:last-child {
+      border-right: 0; }
+  .board .table thead th {
+    border-bottom-width: 1px; }
 .board .text-left {
   text-align: left !important; }
+
+.board form input[type="text"],
+.board form input[type="email"],
+.board form input[type="password"] {
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #dfdfdf;
+  line-height: 28px;
+  background-color: #fafafa; }
+.board form select {
+  min-width: 80px;
+  height: 30px;
+  border: 1px solid #dfdfdf; }
+.board form .notify {
+  margin-bottom: 10px; }
+  .board form .notify > i {
+    font-style: normal;
+    color: #f70000; }
+.board form .help {
+  margin-top: 5px; }
+  .board form .help.inline {
+    display: inline;
+    margin-left: 10px; }
+.board form tbody th {
+  width: 185px;
+  height: 43px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  line-height: 30px !important;
+  font-size: 13px !important;
+  text-align: left !important; }
+  .board form tbody th > .require {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    font-style: normal;
+    color: #f70000; }
+.board form tbody th + td {
+  height: 43px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 30px !important;
+  text-align: left !important; }
+.board form tbody tr:first-child th, .board form tbody tr:first-child td {
+  border-top: 0; }
+.board form tbody td .btn {
+  height: 30px;
+  font-size: 12px;
+  line-height: 16px; }
 
 /*# sourceMappingURL=board.css.map */

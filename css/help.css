@@ -1,3 +1,27 @@
+.font-roboto {
+  font-family: 'Roboto', sans-serif; }
+
+/*
+.font-13px {
+    font-size: 13px;
+    line-height: 20px;
+}
+.font-14px {
+    font-size: 14px;
+    line-height: 22px;
+}
+.font-15px {
+    font-size: 15px;
+    line-height: 25px;
+}
+*/
+.icon-circle {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center; }
+  .icon-circle > i {
+    font-size: 85%; }
+
 #content.ask .list {
   margin-bottom: 30px; }
   @media (min-width: 1200px) {
@@ -39,5 +63,52 @@
 #content.ask .write .captcha-word {
   display: inline-block;
   margin-left: 10px; }
+
+#content.faq .list {
+  border-top: 1px solid #dfdfdf;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    #content.faq .list {
+      margin-top: 20px; } }
+  @media (min-width: 1200px) {
+    #content.faq .list {
+      margin-top: 40px; } }
+  #content.faq .list li .icon-circle {
+    position: absolute;
+    top: 12px;
+    left: 22px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-style: normal;
+    background-color: #949494;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold; }
+  #content.faq .list li .icon-angle-up,
+  #content.faq .list li .icon-angle-down {
+    position: absolute;
+    top: 14px;
+    right: 20px; }
+  #content.faq .list li > a {
+    position: relative;
+    display: block;
+    padding: 14px 50px 14px 70px;
+    border-bottom: 1px solid #dfdfdf; }
+  #content.faq .list li > div {
+    position: relative;
+    display: none;
+    border-bottom: 1px solid #dfdfdf; }
+    #content.faq .list li > div > .icon-circle {
+      top: 24px;
+      background-color: #f36523; }
+    #content.faq .list li > div > div {
+      padding: 20px 20px 20px 70px;
+      background-color: #f8f8f8; }
+  #content.faq .list li.opened > a {
+    color: #333; }
+  #content.faq .list li.opened > div {
+    display: block; }
 
 /*# sourceMappingURL=help.css.map */

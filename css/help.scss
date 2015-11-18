@@ -1,3 +1,5 @@
+@import 'common';
+
 // 문의하기
 #content.ask {
     .list {
@@ -41,6 +43,69 @@
         .captcha-word {
             display: inline-block;
             margin-left: 10px;
+        }
+    }
+}
+
+// 자주묻는 질문
+#content.faq {
+    .list {
+        border-top: 1px solid #dfdfdf;
+        margin-bottom: 40px;
+        @media (min-width: 768px) {
+            margin-top: 20px;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 40px;
+        }
+        li {
+            .icon-circle {
+                position: absolute;
+                top: 12px;
+                left: 22px;
+                width: 26px;
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                font-style: normal;
+                background-color: #949494;
+                border-radius: 50%;
+                color: #fff;
+                font-weight: bold;
+            }
+            .icon-angle-up,
+            .icon-angle-down {
+                position: absolute;
+                top: 14px;
+                right: 20px;
+            }
+            > a {
+                position: relative;
+                display: block;
+                padding: 14px 50px 14px 70px;
+                border-bottom: 1px solid #dfdfdf;
+            }
+            > div {
+                position: relative;
+                display: none;
+                border-bottom: 1px solid #dfdfdf;
+                > .icon-circle {
+                    top: 24px;
+                    background-color: $main-color;
+                }
+                > div {
+                    padding: 20px 20px 20px 70px;
+                    background-color: #f8f8f8;
+                }
+            }
+            &.opened {
+                > a {
+                    color: #333;
+                }
+                > div {
+                    display: block;
+                }
+            }
         }
     }
 }

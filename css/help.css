@@ -1,0 +1,43 @@
+#content.ask .list {
+  margin-bottom: 30px; }
+  @media (min-width: 1200px) {
+    #content.ask .list {
+      margin-bottom: 70px; } }
+  #content.ask .list th:nth-of-type(1),
+  #content.ask .list td:nth-of-type(1),
+  #content.ask .list th:nth-of-type(5),
+  #content.ask .list td:nth-of-type(5),
+  #content.ask .list th:nth-of-type(6),
+  #content.ask .list td:nth-of-type(6) {
+    display: none; }
+    @media (min-width: 768px) {
+      #content.ask .list th:nth-of-type(1),
+      #content.ask .list td:nth-of-type(1),
+      #content.ask .list th:nth-of-type(5),
+      #content.ask .list td:nth-of-type(5),
+      #content.ask .list th:nth-of-type(6),
+      #content.ask .list td:nth-of-type(6) {
+        display: table-cell; } }
+  #content.ask .list th:nth-of-type(2),
+  #content.ask .list td:nth-of-type(2) {
+    border-left-width: 0; }
+    @media (min-width: 768px) {
+      #content.ask .list th:nth-of-type(2),
+      #content.ask .list td:nth-of-type(2) {
+        border-left-width: 1px; } }
+  #content.ask .list th:nth-of-type(4),
+  #content.ask .list td:nth-of-type(4) {
+    border-right-width: 0; }
+    @media (min-width: 768px) {
+      #content.ask .list th:nth-of-type(4),
+      #content.ask .list td:nth-of-type(4) {
+        border-right-width: 1px; } }
+#content.ask .write #title {
+  width: 100%; }
+#content.ask .write input[type="file"] {
+  width: 100%; }
+#content.ask .write .captcha-word {
+  display: inline-block;
+  margin-left: 10px; }
+
+/*# sourceMappingURL=help.css.map */

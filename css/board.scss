@@ -36,6 +36,9 @@
             &:last-child {
                 border-right: 0;
             }
+            .reply {
+                color: $main-color;
+            }
         }
         thead th {
             border-bottom-width: 1px;
@@ -44,6 +47,64 @@
     }
     .text-left {
         text-align: left !important;
+    }
+    .search-box {
+        position: relative;
+        padding: 10px;
+        border: 1px solid #dfdfdf;
+        margin-bottom: 30px;
+        text-align: center;
+        select, input, button[type="submit"] {
+            width: 100%;
+            font-size: 13px;
+        }
+        select {
+            @media (min-width: 768px) {
+                width: 140px;
+            }
+        }
+        button[type="submit"] {
+            line-height: 18px;
+            @media (min-width: 768px) {
+                display: inline-block;
+                width: 130px;
+            }
+        }
+        input {
+            @media (min-width: 768px) {
+                width: 300px;
+            }
+            @media (min-width: 1200px) {
+                width: 700px;
+            }
+        }
+        p {
+            margin-bottom: 10px;
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+                display: inline-block;
+            }
+            @media (min-width: 1200px) {
+            }
+            
+        }
+        /*
+        @media (min-width: 768px) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 165px;
+            padding-right: 155px;
+            button {
+            }
+        }
+        @media (min-width: 1200px) {
+            padding-left: 185px;
+            padding-right: 175px;
+            margin-bottom: 40px;
+            button {
+            }
+        }
+        */
     }
 }
 .board form {
@@ -111,6 +172,121 @@
         .btn {
             height: 30px;
             @include font(12px, 16px);
+        }
+    }
+}
+
+.board .view {
+    border-top: 1px solid #dfdfdf;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+    .header {
+        overflow: hidden;
+        position: relative;
+        padding: 10px 20px;
+        background-color: #fafafa;
+        border-bottom: 1px solid #dfdfdf;
+        .title {
+            @include font(14px, 22px, bold);
+            color: #333;
+            @media (min-width: 768px) {
+                float: left;
+            }
+        }
+        time {
+            display: block;
+            margin-top: 10px;
+            @include font(12px);
+            @media (min-width: 768px) {
+                float: right;
+                margin-top: 0;
+            }
+        }
+    }
+    .info {
+        overflow: hidden;
+        padding: 10px 20px;
+        border-bottom: 1px solid #dfdfdf;
+        @include font(13px, 20px);
+        .writer {
+            float: left;
+        }
+        .counter {
+            float: right;
+            dl {
+                margin-left: 10px;
+            }
+        }
+        .writer, .counter {
+            dl {
+                display: inline-block;
+                dt, dd {
+                    display: inline-block;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .details {
+        padding: 20px;
+        div {
+            height: 300px;
+        }
+    }
+    .answer {
+        padding: 20px;
+        border: 1px solid #dfdfdf;
+        @media (min-width: 768px) {
+            padding: 30px;
+        }
+        h4 {
+            margin-bottom: 25px;
+            color: $main-color;
+            @include font(15px, 22px);
+        }
+    }
+    .btn-area {
+        padding-top: 30px;
+        border-top: 1px solid #dfdfdf;
+        margin-top: 30px;
+        p {
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: right;
+            }
+            .btn {
+                margin-bottom: 10px;
+                @media (min-width: 768px) {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+
+.board .write {
+    margin-bottom: 50px;
+    @media (min-width: 768px) {
+        margin-bottom: 100px;
+    }
+    .btn-area {
+        margin-top: 30px;
+        @media (min-width: 768px) {
+            margin-top: 80px;
+        }
+        p {
+            text-align: center;
+            .btn {
+                @media (min-width: 768px) {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+            }
         }
     }
 }

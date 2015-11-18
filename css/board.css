@@ -51,10 +51,59 @@
       border-left: 0; }
     .board .table td:last-child {
       border-right: 0; }
+    .board .table td .reply {
+      color: #f36523; }
   .board .table thead th {
     border-bottom-width: 1px; }
 .board .text-left {
   text-align: left !important; }
+.board .search-box {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 30px;
+  text-align: center;
+  /*
+  @media (min-width: 768px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 165px;
+      padding-right: 155px;
+      button {
+      }
+  }
+  @media (min-width: 1200px) {
+      padding-left: 185px;
+      padding-right: 175px;
+      margin-bottom: 40px;
+      button {
+      }
+  }
+  */ }
+  .board .search-box select, .board .search-box input, .board .search-box button[type="submit"] {
+    width: 100%;
+    font-size: 13px; }
+  @media (min-width: 768px) {
+    .board .search-box select {
+      width: 140px; } }
+  .board .search-box button[type="submit"] {
+    line-height: 18px; }
+    @media (min-width: 768px) {
+      .board .search-box button[type="submit"] {
+        display: inline-block;
+        width: 130px; } }
+  @media (min-width: 768px) {
+    .board .search-box input {
+      width: 300px; } }
+  @media (min-width: 1200px) {
+    .board .search-box input {
+      width: 700px; } }
+  .board .search-box p {
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .board .search-box p {
+        margin-bottom: 0;
+        display: inline-block; } }
 
 .board form input[type="text"],
 .board form input[type="email"],
@@ -106,5 +155,100 @@
   height: 30px;
   font-size: 12px;
   line-height: 16px; }
+
+.board .view {
+  border-top: 1px solid #dfdfdf;
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .board .view {
+      margin-bottom: 60px; } }
+  .board .view .header {
+    overflow: hidden;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dfdfdf; }
+    .board .view .header .title {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: bold;
+      color: #333; }
+      @media (min-width: 768px) {
+        .board .view .header .title {
+          float: left; } }
+    .board .view .header time {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px; }
+      @media (min-width: 768px) {
+        .board .view .header time {
+          float: right;
+          margin-top: 0; } }
+  .board .view .info {
+    overflow: hidden;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dfdfdf;
+    font-size: 13px;
+    line-height: 20px; }
+    .board .view .info .writer {
+      float: left; }
+    .board .view .info .counter {
+      float: right; }
+      .board .view .info .counter dl {
+        margin-left: 10px; }
+    .board .view .info .writer dl, .board .view .info .counter dl {
+      display: inline-block; }
+      .board .view .info .writer dl dt, .board .view .info .writer dl dd, .board .view .info .counter dl dt, .board .view .info .counter dl dd {
+        display: inline-block;
+        font-weight: normal; }
+  .board .view .details {
+    padding: 20px; }
+    .board .view .details div {
+      height: 300px; }
+  .board .view .answer {
+    padding: 20px;
+    border: 1px solid #dfdfdf; }
+    @media (min-width: 768px) {
+      .board .view .answer {
+        padding: 30px; } }
+    .board .view .answer h4 {
+      margin-bottom: 25px;
+      color: #f36523;
+      font-size: 15px;
+      line-height: 22px; }
+  .board .view .btn-area {
+    padding-top: 30px;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 30px; }
+    .board .view .btn-area p {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .board .view .btn-area p {
+          text-align: right; } }
+      .board .view .btn-area p .btn {
+        margin-bottom: 10px; }
+        @media (min-width: 768px) {
+          .board .view .btn-area p .btn {
+            padding-top: 9px;
+            padding-bottom: 9px; } }
+
+.board .write {
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    .board .write {
+      margin-bottom: 100px; } }
+  .board .write .btn-area {
+    margin-top: 30px; }
+    @media (min-width: 768px) {
+      .board .write .btn-area {
+        margin-top: 80px; } }
+    .board .write .btn-area p {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .board .write .btn-area p .btn {
+          padding-top: 9px;
+          padding-bottom: 9px;
+          padding-left: 24px;
+          padding-right: 24px; } }
 
 /*# sourceMappingURL=board.css.map */

@@ -673,10 +673,15 @@
       color: #f36523;
       font-size: 25px;
       line-height: 25px; }
+      #content.involve .summary p strong small {
+        font-size: 18px;
+        font-weight: normal; }
       @media (min-width: 768px) {
         #content.involve .summary p strong {
           font-size: 40px;
-          line-height: 40px; } }
+          line-height: 40px; }
+          #content.involve .summary p strong small {
+            font-size: 24px; } }
 #content.involve .btn-area {
   margin-bottom: 30px; }
   @media (min-width: 768px) {
@@ -690,6 +695,9 @@
     font-size: 14px; }
     @media (min-width: 768px) {
       #content.involve .btn-area .btn {
+        width: 190px;
         font-size: 18px; } }
+    #content.involve .btn-area .btn.btn-default {
+      color: #666; }
 
 /*# sourceMappingURL=discover.css.map */

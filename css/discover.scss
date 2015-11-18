@@ -802,8 +802,15 @@
                 margin-left: 10px;
                 color: $main-color;
                 @include font(25px, 25px);
+                small {
+                    font-size: 18px;
+                    font-weight: normal;
+                }
                 @media (min-width: 768px) {
                     @include font(40px, 40px);
+                    small {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -821,7 +828,11 @@
             margin-right: 5px;
             font-size: 14px;
             @media (min-width: 768px) {
+                width: 190px;
                 font-size: 18px;
+            }
+            &.btn-default {
+                color: $font-color;
             }
         }
     }

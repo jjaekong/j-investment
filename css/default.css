@@ -134,6 +134,32 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
     #content .nav-tabs > li:last-child {
       margin-right: 0; }
 
+.page-header {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 25px; }
+  @media (min-width: 768px) {
+    .page-header {
+      margin-top: 25px; } }
+  @media (min-width: 1200px) {
+    .page-header {
+      margin-bottom: 50px; } }
+  .page-header .page-title {
+    font-size: 22px; }
+    @media (min-width: 768px) {
+      .page-header .page-title {
+        font-size: 30px; } }
+    @media (min-width: 1200px) {
+      .page-header .page-title {
+        display: inline-block;
+        margin-right: 10px; } }
+  .page-header > p {
+    margin-top: 10px; }
+    @media (min-width: 1200px) {
+      .page-header > p {
+        display: inline-block;
+        margin-top: 0; } }
+
 body > .skip:focus {
   position: fixed;
   top: 0;

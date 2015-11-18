@@ -125,6 +125,34 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
         }
     }
 }
+.page-header {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 25px;
+    @media (min-width: 768px) {
+        margin-top: 25px;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+    .page-title {
+        font-size: 22px;
+        @media (min-width: 768px) {
+            font-size: 30px;
+        }
+        @media (min-width: 1200px) {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    > p {
+        margin-top: 10px;
+        @media (min-width: 1200px) {
+            display: inline-block;
+            margin-top: 0;
+        }
+    }
+}
 
 // 스킵네비게이션
 body > .skip:focus {

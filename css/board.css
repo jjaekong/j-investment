@@ -102,6 +102,11 @@
   min-width: 80px;
   height: 30px;
   border: 1px solid #dfdfdf; }
+.board form textarea {
+  padding: 5px 10px;
+  border: 1px solid #dfdfdf;
+  line-height: 28px;
+  background-color: #fafafa; }
 .board form .notify {
   margin-bottom: 10px; }
   .board form .notify > i {

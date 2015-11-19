@@ -104,6 +104,12 @@
         height: 30px;
         border: 1px solid #dfdfdf;
     }
+    textarea {
+        padding: 5px 10px;
+        border: 1px solid #dfdfdf;
+        line-height: 28px;
+        background-color: #fafafa;
+    }
     .notify {
         margin-bottom: 10px;
         > i {

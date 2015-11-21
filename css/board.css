@@ -78,7 +78,7 @@
   @media (min-width: 768px) {
     .board .search-box input {
       width: 300px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     .board .search-box input {
       width: 700px; } }
   .board .search-box p {

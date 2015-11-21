@@ -61,7 +61,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
   @media (min-width: 768px) {
     .section-header {
       margin-bottom: 20px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     .section-header {
       margin-top: 40px;
       margin-bottom: 25px; } }
@@ -95,6 +95,13 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
       .container .row > div {
         padding-left: 10px;
         padding-right: 10px; } }
+/*
+@media (min-width: 1220px) {
+    .container {
+        width: 1220px;
+    }
+}
+*/
 #content .nav-tabs {
   border-bottom: 0;
   margin-bottom: 10px; }
@@ -141,7 +148,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
   @media (min-width: 768px) {
     .page-header {
       margin-top: 25px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     .page-header {
       margin-bottom: 50px; } }
   .page-header .page-title {
@@ -149,13 +156,13 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
     @media (min-width: 768px) {
       .page-header .page-title {
         font-size: 30px; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1220px) {
       .page-header .page-title {
         display: inline-block;
         margin-right: 10px; } }
   .page-header > p {
     margin-top: 10px; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1220px) {
       .page-header > p {
         display: inline-block;
         margin-top: 0; } }
@@ -249,7 +256,7 @@ body > .skip:focus {
 #footer {
   border-top: 3px solid #f36523; }
   #footer > nav {
-    padding: 0 10px 35px;
+    padding: 0 0 35px;
     background-color: #585858; }
     #footer > nav h2 {
       margin-top: 30px;
@@ -263,7 +270,7 @@ body > .skip:focus {
       #footer > nav ul a:hover, #footer > nav ul a:focus {
         color: #ccc; }
   #footer > div {
-    padding: 35px 10px;
+    padding: 35px 0;
     background-color: #404040; }
     #footer > div .properties {
       margin-bottom: 10px; }
@@ -293,7 +300,7 @@ body > .skip:focus {
         font-style: normal; }
     #footer > div .sns {
       margin-bottom: 30px; }
-      @media (min-width: 1200px) {
+      @media (min-width: 1220px) {
         #footer > div .sns {
           margin-bottom: 0; } }
       #footer > div .sns > p {
@@ -450,7 +457,7 @@ body > .skip:focus {
   @media (min-width: 768px) {
     .paging {
       margin-bottom: 50px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     .paging {
       margin-bottom: 100px; } }
   .paging .pagination {

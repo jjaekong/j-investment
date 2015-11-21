@@ -1,4 +1,4 @@
-.font-roboto {
+.font-roboto, .my-project-item .details .stats .rate h5, .my-project-item .details .stats .rate .progress .progress-bar, .my-project-item .details .stats .involve > div dt, .my-project-item .details .stats .period dt time, .my-project-item .details .stats .period dd time {
   font-family: 'Roboto', sans-serif; }
 
 /*
@@ -53,8 +53,234 @@
   @media (min-width: 768px) {
     #content.modify-info .bank-account {
       margin-top: 50px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     #content.modify-info .bank-account {
       margin-top: 100px; } }
+
+#content.my-project {
+  padding-bottom: 30px; }
+  @media (min-width: 1220px) {
+    #content.my-project {
+      padding-bottom: 100px; } }
+  #content.my-project .section-header {
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-top: 50px; }
+    #content.my-project .section-header > a {
+      position: absolute;
+      top: -7px;
+      right: 0; }
+    @media (min-width: 1220px) {
+      #content.my-project .section-header {
+        margin-top: 90px; } }
+  #content.my-project .filter ul {
+    overflow: hidden; }
+  #content.my-project .filter li {
+    float: left;
+    padding: 5px;
+    width: 50%; }
+    #content.my-project .filter li:nth-of-type(1), #content.my-project .filter li:nth-of-type(3) {
+      padding-left: 0; }
+    #content.my-project .filter li:nth-of-type(2), #content.my-project .filter li:nth-of-type(4) {
+      padding-right: 0; }
+    @media (min-width: 768px) {
+      #content.my-project .filter li {
+        padding: 0 15px;
+        width: 25%; }
+        #content.my-project .filter li:nth-of-type(2) {
+          padding-right: 15px; }
+        #content.my-project .filter li:nth-of-type(3) {
+          padding-left: 15px; } }
+    @media (min-width: 1220px) {
+      #content.my-project .filter li br {
+        display: none; } }
+  #content.my-project .filter a {
+    display: block;
+    padding: 5px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      #content.my-project .filter a {
+        padding: 10px; } }
+    #content.my-project .filter a:hover, #content.my-project .filter a:focus, #content.my-project .filter a.active {
+      background-color: #f36523;
+      color: #fff;
+      border-color: #f36523; }
+  #content.my-project .nothing {
+    text-align: center; }
+
+.my-project-item {
+  overflow: hidden;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  margin-bottom: 10px; }
+  @media (min-width: 1220px) {
+    .my-project-item {
+      height: 250px;
+      margin-bottom: 20px; } }
+  .my-project-item .figure {
+    height: 185px;
+    border-bottom: 1px solid #e9e9e9;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+    @media (min-width: 1220px) {
+      .my-project-item .figure {
+        float: left;
+        width: 370px;
+        height: 100%;
+        border-bottom: 0;
+        border-bottom: 1px solid #e9e9e9; } }
+  .my-project-item .details {
+    padding: 20px; }
+    @media (min-width: 1220px) {
+      .my-project-item .details {
+        height: 248px;
+        padding: 30px 0;
+        margin-left: 370px; } }
+    .my-project-item .details .summary {
+      padding-bottom: 20px; }
+      .my-project-item .details .summary h4 {
+        overflow: hidden;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #333;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center; }
+      .my-project-item .details .summary > p {
+        display: none; }
+      .my-project-item .details .summary ul {
+        margin-bottom: 15px; }
+        .my-project-item .details .summary ul li {
+          position: relative;
+          padding-left: 10px;
+          font-size: 13px;
+          line-height: 22px; }
+          .my-project-item .details .summary ul li .dot {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 3px;
+            height: 3px;
+            background-color: #f36523; }
+        .my-project-item .details .summary ul dt, .my-project-item .details .summary ul dd {
+          display: inline-block;
+          color: #888;
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: normal; }
+      .my-project-item .details .summary .btn-area p {
+        display: block; }
+        .my-project-item .details .summary .btn-area p .btn:hover, .my-project-item .details .summary .btn-area p .btn:focus {
+          background-color: #fff;
+          border-color: #f36523;
+          color: #f36523; }
+      @media (min-width: 1220px) {
+        .my-project-item .details .summary {
+          float: left;
+          width: 440px;
+          height: 188px;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 0; }
+          .my-project-item .details .summary h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: left; }
+          .my-project-item .details .summary > p {
+            overflow: hidden;
+            display: block;
+            margin-bottom: 25px;
+            font-size: 13px;
+            line-height: 18px;
+            text-overflow: ellipsis;
+            white-space: nowrap; } }
+    .my-project-item .details .stats {
+      padding-top: 20px;
+      border-top: 1px solid #e9e9e9; }
+      @media (min-width: 1220px) {
+        .my-project-item .details .stats {
+          padding-top: 0;
+          padding-left: 60px;
+          padding-right: 70px;
+          height: 188px;
+          border-top: 0;
+          border-left: 1px solid #ccc;
+          margin-left: 440px; } }
+      .my-project-item .details .stats .rate h5 {
+        overflow: hidden;
+        display: block;
+        font-size: 33px;
+        line-height: 45px;
+        text-align: center;
+        color: #f36523;
+        text-overflow: ellipsis;
+        white-space: normal; }
+        .my-project-item .details .stats .rate h5 small {
+          color: #f36523;
+          font-size: 18px;
+          font-weight: normal; }
+        @media (min-width: 1220px) {
+          .my-project-item .details .stats .rate h5 {
+            line-height: 24px; } }
+      .my-project-item .details .stats .rate p {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #333;
+        text-align: center; }
+        @media (min-width: 1220px) {
+          .my-project-item .details .stats .rate p {
+            margin-top: 7px; } }
+      .my-project-item .details .stats .rate .progress {
+        height: 22px;
+        box-shadow: none;
+        background-color: #d7d7d7;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        border-bottom-left-radius: 11px;
+        border-bottom-right-radius: 11px; }
+        .my-project-item .details .stats .rate .progress .progress-bar {
+          box-shadow: none;
+          background-color: #f36523;
+          line-height: 22px; }
+      .my-project-item .details .stats .involve {
+        overflow: hidden;
+        border-top: 1px solid #e9e9e9;
+        border-bottom: 1px solid #e9e9e9; }
+        .my-project-item .details .stats .involve > div {
+          float: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 50%;
+          border-right: 1px solid #e9e9e9;
+          text-align: center; }
+          .my-project-item .details .stats .involve > div:last-child {
+            border-right: 0; }
+          .my-project-item .details .stats .involve > div dt {
+            font-size: 20px;
+            line-height: 22px; }
+          .my-project-item .details .stats .involve > div dd {
+            font-size: 12px;
+            line-height: 18px; }
+          .my-project-item .details .stats .involve > div .closed {
+            color: #ce0000;
+            font-size: 20px;
+            line-height: 40px; }
+      .my-project-item .details .stats .period {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center; }
+        .my-project-item .details .stats .period dt, .my-project-item .details .stats .period dd {
+          display: inline-block;
+          font-size: 13px;
+          line-height: 20px; }
 
 /*# sourceMappingURL=mypage.css.map */

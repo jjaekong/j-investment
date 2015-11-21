@@ -4,7 +4,7 @@
 #content.ask {
     .list {
         margin-bottom: 30px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1220px) {
             margin-bottom: 70px;
         }
         th:nth-of-type(1),
@@ -55,7 +55,7 @@
         @media (min-width: 768px) {
             margin-top: 20px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1220px) {
             margin-top: 40px;
         }
         li {

@@ -39,7 +39,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
     @media (min-width: 768px) {
         margin-bottom: 20px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1220px) {
         margin-top: 40px;
         margin-bottom: 25px;
     }
@@ -77,8 +77,16 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
                 padding-right: 10px;
             }
         }
+        
     }
 }
+/*
+@media (min-width: 1220px) {
+    .container {
+        width: 1220px;
+    }
+}
+*/
 #content .nav-tabs {
     border-bottom: 0;
     margin-bottom: 10px;
@@ -132,7 +140,7 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
     @media (min-width: 768px) {
         margin-top: 25px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1220px) {
         margin-bottom: 50px;
     }
     .page-title {
@@ -140,14 +148,14 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
         @media (min-width: 768px) {
             font-size: 30px;
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 1220px) {
             display: inline-block;
             margin-right: 10px;
         }
     }
     > p {
         margin-top: 10px;
-        @media (min-width: 1200px) {
+        @media (min-width: 1220px) {
             display: inline-block;
             margin-top: 0;
         }
@@ -262,7 +270,7 @@ body > .skip:focus {
 #footer {
     border-top: 3px solid $main-color;
     > nav {
-        padding: 0 10px 35px;
+        padding: 0 0 35px;
         background-color: #585858;
         h2 {
             margin-top: 30px;
@@ -283,7 +291,7 @@ body > .skip:focus {
         }
     }
     > div {
-        padding: 35px 10px;
+        padding: 35px 0;
         background-color: #404040;
         .properties {
             margin-bottom: 10px;
@@ -320,7 +328,7 @@ body > .skip:focus {
         }
         .sns {
             margin-bottom: 30px;
-            @media (min-width: 1200px) {
+            @media (min-width: 1220px) {
                 margin-bottom: 0;
             }
             > p {
@@ -513,7 +521,7 @@ body > .skip:focus {
     @media (min-width: 768px) {
         margin-bottom: 50px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1220px) {
         margin-bottom: 100px;
     }
     .pagination {

@@ -26,92 +26,6 @@
   body.mypage .page-header {
     margin-bottom: 50px; } }
 
-#content.modify-info label {
-  font-weight: normal; }
-#content.modify-info .default .email .help {
-  margin-top: 0; }
-#content.modify-info .default .introduce textarea {
-  width: 100%;
-  height: 100px; }
-#content.modify-info .default #zipcode {
-  width: 80px; }
-#content.modify-info .default .address input {
-  width: 100%; }
-#content.modify-info .default .profile figure {
-  display: inline-block;
-  border: 1px solid #dfdfdf;
-  margin-bottom: 10px;
-  background-color: #f3f3f3;
-  text-align: center; }
-  #content.modify-info .default .profile figure.empty {
-    width: 138px;
-    height: 138px; }
-    #content.modify-info .default .profile figure.empty img {
-      margin-top: 60px; }
-#content.modify-info .bank-account {
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    #content.modify-info .bank-account {
-      margin-top: 50px; } }
-  @media (min-width: 1220px) {
-    #content.modify-info .bank-account {
-      margin-top: 100px; } }
-
-#content.my-project {
-  padding-bottom: 30px; }
-  @media (min-width: 1220px) {
-    #content.my-project {
-      padding-bottom: 100px; } }
-  #content.my-project .section-header {
-    position: relative;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #dfdfdf;
-    margin-top: 50px; }
-    #content.my-project .section-header > a {
-      position: absolute;
-      top: -7px;
-      right: 0; }
-    @media (min-width: 1220px) {
-      #content.my-project .section-header {
-        margin-top: 90px; } }
-  #content.my-project .filter ul {
-    overflow: hidden; }
-  #content.my-project .filter li {
-    float: left;
-    padding: 5px;
-    width: 50%; }
-    #content.my-project .filter li:nth-of-type(1), #content.my-project .filter li:nth-of-type(3) {
-      padding-left: 0; }
-    #content.my-project .filter li:nth-of-type(2), #content.my-project .filter li:nth-of-type(4) {
-      padding-right: 0; }
-    @media (min-width: 768px) {
-      #content.my-project .filter li {
-        padding: 0 15px;
-        width: 25%; }
-        #content.my-project .filter li:nth-of-type(2) {
-          padding-right: 15px; }
-        #content.my-project .filter li:nth-of-type(3) {
-          padding-left: 15px; } }
-    @media (min-width: 1220px) {
-      #content.my-project .filter li br {
-        display: none; } }
-  #content.my-project .filter a {
-    display: block;
-    padding: 5px;
-    border: 1px solid #c4c4c4;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none; }
-    @media (min-width: 768px) {
-      #content.my-project .filter a {
-        padding: 10px; } }
-    #content.my-project .filter a:hover, #content.my-project .filter a:focus, #content.my-project .filter a.active {
-      background-color: #f36523;
-      color: #fff;
-      border-color: #f36523; }
-  #content.my-project .nothing {
-    text-align: center; }
-
 .my-project-item {
   overflow: hidden;
   border: 1px solid #e9e9e9;
@@ -282,5 +196,111 @@
           display: inline-block;
           font-size: 13px;
           line-height: 20px; }
+
+#content.modify-info label {
+  font-weight: normal; }
+#content.modify-info .default .email .help {
+  margin-top: 0; }
+#content.modify-info .default .introduce textarea {
+  width: 100%;
+  height: 100px; }
+#content.modify-info .default #zipcode {
+  width: 80px; }
+#content.modify-info .default .address input {
+  width: 100%; }
+#content.modify-info .default .profile figure {
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+  background-color: #f3f3f3;
+  text-align: center; }
+  #content.modify-info .default .profile figure.empty {
+    width: 138px;
+    height: 138px; }
+    #content.modify-info .default .profile figure.empty img {
+      margin-top: 60px; }
+#content.modify-info .bank-account {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    #content.modify-info .bank-account {
+      margin-top: 50px; } }
+  @media (min-width: 1220px) {
+    #content.modify-info .bank-account {
+      margin-top: 100px; } }
+
+#content.my-project {
+  padding-bottom: 30px; }
+  @media (min-width: 1220px) {
+    #content.my-project {
+      padding-bottom: 100px; } }
+  #content.my-project .section-header {
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-top: 50px; }
+    #content.my-project .section-header > a {
+      position: absolute;
+      top: -7px;
+      right: 0; }
+    @media (min-width: 1220px) {
+      #content.my-project .section-header {
+        margin-top: 90px; } }
+  #content.my-project .filter ul {
+    overflow: hidden; }
+  #content.my-project .filter li {
+    float: left;
+    padding: 5px;
+    width: 50%; }
+    #content.my-project .filter li:nth-of-type(1), #content.my-project .filter li:nth-of-type(3) {
+      padding-left: 0; }
+    #content.my-project .filter li:nth-of-type(2), #content.my-project .filter li:nth-of-type(4) {
+      padding-right: 0; }
+    @media (min-width: 768px) {
+      #content.my-project .filter li {
+        padding: 0 15px;
+        width: 25%; }
+        #content.my-project .filter li:nth-of-type(2) {
+          padding-right: 15px; }
+        #content.my-project .filter li:nth-of-type(3) {
+          padding-left: 15px; } }
+    @media (min-width: 1220px) {
+      #content.my-project .filter li br {
+        display: none; } }
+  #content.my-project .filter a {
+    display: block;
+    padding: 5px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      #content.my-project .filter a {
+        padding: 10px; } }
+    #content.my-project .filter a:hover, #content.my-project .filter a:focus, #content.my-project .filter a.active {
+      background-color: #f36523;
+      color: #fff;
+      border-color: #f36523; }
+  #content.my-project .nothing {
+    text-align: center; }
+
+#content.favorite .btn-area p {
+  text-align: right; }
+@media (min-width: 768px) {
+  #content.favorite .btn-area {
+    margin-bottom: 10px; } }
+@media (min-width: 1220px) {
+  #content.favorite .btn-area {
+    margin-bottom: 20px; } }
+#content.favorite .menu {
+  overflow: hidden; }
+  #content.favorite .menu input {
+    margin-top: 12px;
+    margin-left: 10px; }
+  #content.favorite .menu button {
+    float: right;
+    padding-right: 0;
+    padding-left: 0;
+    color: #f36523;
+    font-size: 20px; }
 
 /*# sourceMappingURL=mypage.css.map */

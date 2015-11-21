@@ -28,3 +28,5 @@
 .icon-up-circle:before { content: '\e81a'; } /* '' */
 .icon-level-down:before { content: '\e81b'; } /* '' */
 .icon-lock:before { content: '\e81c'; } /* '' */
+.icon-check:before { content: '\e81d'; } /* '' */
+.icon-cancel:before { content: '\e81e'; } /* '' */

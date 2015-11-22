@@ -1,4 +1,4 @@
-.font-roboto, .my-project-item .details .stats .rate h5, .my-project-item .details .stats .rate .progress .progress-bar, .my-project-item .details .stats .involve > div dt, .my-project-item .details .stats .period dt time, .my-project-item .details .stats .period dd time, #content.result .overview a div {
+.font-roboto, .my-project-item .details .stats .rate h5, .my-project-item .details .stats .rate .progress .progress-bar, .my-project-item .details .stats .involve > div dt, .my-project-item .details .stats .period dt time, .my-project-item .details .stats .period dd time, #content.result .overview a div, #content.payment-history .overview a p, #content.payment-history .list .table td.price strong {
   font-family: 'Roboto', sans-serif; }
 
 /*
@@ -296,13 +296,13 @@
   #content.my-project .nothing {
     text-align: center; }
 
-#content.favorite > .btn-area p {
+#content.favorite > .container > .btn-area p {
   text-align: right; }
 @media (min-width: 768px) {
-  #content.favorite > .btn-area {
+  #content.favorite > .container > .btn-area {
     margin-bottom: 10px; } }
 @media (min-width: 1220px) {
-  #content.favorite > .btn-area {
+  #content.favorite > .container > .btn-area {
     margin-bottom: 20px; } }
 #content.favorite .menu {
   overflow: hidden; }
@@ -317,23 +317,33 @@
     font-size: 20px; }
 
 #content.result .overview {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  /*
+  .row {
+      margin-left: -15px;
+      margin-right: -15px;
+  }
+  */ }
   @media (min-width: 1220px) {
     #content.result .overview {
       margin-bottom: 70px; } }
   #content.result .overview li:nth-of-type(odd) {
+    padding-left: 10px;
     padding-right: 5px; }
   #content.result .overview li:nth-of-type(even) {
-    padding-left: 5px; }
+    padding-left: 5px;
+    padding-right: 10px; }
   #content.result .overview li:nth-of-type(1), #content.result .overview li:nth-of-type(2) {
     padding-bottom: 5px; }
   #content.result .overview li:nth-of-type(3), #content.result .overview li:nth-of-type(4) {
     padding-top: 5px; }
   @media (min-width: 768px) {
     #content.result .overview li:nth-of-type(odd) {
+      padding-left: 15px;
       padding-right: 15px; }
     #content.result .overview li:nth-of-type(even) {
-      padding-left: 15px; }
+      padding-left: 15px;
+      padding-right: 15px; }
     #content.result .overview li:nth-of-type(1), #content.result .overview li:nth-of-type(2) {
       padding-bottom: 0; }
     #content.result .overview li:nth-of-type(3), #content.result .overview li:nth-of-type(4) {
@@ -386,5 +396,212 @@
         background-color: #f36523;
         border-color: #f36523;
         color: #fff; }
+
+#content.payment-history .overview {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    #content.payment-history .overview {
+      margin-bottom: 30px; } }
+  #content.payment-history .overview li:nth-of-type(3n+1) {
+    padding-left: 10px;
+    padding-right: 5px; }
+  #content.payment-history .overview li:nth-of-type(3n+2) {
+    padding-left: 5px;
+    padding-right: 5px; }
+  #content.payment-history .overview li:nth-of-type(3n+0) {
+    padding-left: 5px;
+    padding-right: 10px; }
+  #content.payment-history .overview li:nth-of-type(1), #content.payment-history .overview li:nth-of-type(2), #content.payment-history .overview li:nth-of-type(3) {
+    padding-bottom: 5px; }
+  #content.payment-history .overview li:nth-of-type(4), #content.payment-history .overview li:nth-of-type(5), #content.payment-history .overview li:nth-of-type(6) {
+    padding-top: 5px; }
+  @media (min-width: 768px) {
+    #content.payment-history .overview li:nth-of-type(3n+1) {
+      padding-left: 15px;
+      padding-right: 15px; }
+    #content.payment-history .overview li:nth-of-type(3n+2) {
+      padding-left: 15px;
+      padding-right: 15px; }
+    #content.payment-history .overview li:nth-of-type(3n) {
+      padding-left: 15px;
+      padding-right: 15px; }
+    #content.payment-history .overview li:nth-of-type(1), #content.payment-history .overview li:nth-of-type(2), #content.payment-history .overview li:nth-of-type(3) {
+      padding-bottom: 0; }
+    #content.payment-history .overview li:nth-of-type(4), #content.payment-history .overview li:nth-of-type(5), #content.payment-history .overview li:nth-of-type(6) {
+      padding-top: 0; } }
+  #content.payment-history .overview a {
+    display: block;
+    border: 1px solid #dfdfdf; }
+    #content.payment-history .overview a h4 {
+      font-size: 12px;
+      line-height: 35px;
+      background-color: #f4f4f4;
+      border-bottom: 1px solid #dfdfdf;
+      text-align: center; }
+      @media (min-width: 1220px) {
+        #content.payment-history .overview a h4 {
+          font-size: 15px;
+          line-height: 35px; } }
+    #content.payment-history .overview a p {
+      font-size: 20px;
+      line-height: 40px;
+      color: #333;
+      text-align: center; }
+      @media (min-width: 1220px) {
+        #content.payment-history .overview a p {
+          font-size: 25px;
+          line-height: 73px; } }
+    #content.payment-history .overview a:hover, #content.payment-history .overview a:focus, #content.payment-history .overview a.active {
+      border-color: #f36523;
+      text-decoration: none; }
+      #content.payment-history .overview a:hover h4, #content.payment-history .overview a:focus h4, #content.payment-history .overview a.active h4 {
+        border-color: #f36523;
+        background-color: #f36523;
+        color: #fff; }
+#content.payment-history .search-area {
+  padding: 5px 15px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    #content.payment-history .search-area {
+      margin-bottom: 50px; } }
+  @media (min-width: 1220px) {
+    #content.payment-history .search-area {
+      margin-bottom: 70px; } }
+  #content.payment-history .search-area input[type="text"] {
+    width: 100%; }
+  #content.payment-history .search-area select {
+    width: 100%; }
+  @media (min-width: 768px) {
+    #content.payment-history .search-area .row {
+      margin-left: -10px;
+      margin-right: -10px; } }
+  #content.payment-history .search-area .row > div {
+    padding: 5px; }
+#content.payment-history .list .summary {
+  font-size: 14px;
+  line-height: 18px; }
+  @media (min-width: 768px) {
+    #content.payment-history .list .summary {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 20px; } }
+  @media (min-width: 1220px) {
+    #content.payment-history .list .summary {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 30px; } }
+  #content.payment-history .list .summary strong {
+    color: #f36523; }
+  #content.payment-history .list .summary .count p {
+    margin-bottom: 5px; }
+    @media (min-width: 768px) {
+      #content.payment-history .list .summary .count p {
+        margin-bottom: 0; } }
+  #content.payment-history .list .summary .price p {
+    margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      #content.payment-history .list .summary .price p {
+        margin-bottom: 0;
+        text-align: right; } }
+    @media (min-width: 1220px) {
+      #content.payment-history .list .summary .price p strong {
+        font-size: 30px;
+        line-height: 30px; } }
+#content.payment-history .list .table-responsive {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; }
+#content.payment-history .list .table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle; }
+#content.payment-history .list .table th:nth-of-type(1),
+#content.payment-history .list .table td:nth-of-type(1) {
+  display: none; }
+  @media (min-width: 1220px) {
+    #content.payment-history .list .table th:nth-of-type(1),
+    #content.payment-history .list .table td:nth-of-type(1) {
+      display: table-cell; } }
+#content.payment-history .list .table td.figure div {
+  margin: 0 auto;
+  width: 100px;
+  height: 70px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #content.payment-history .list .table td.figure div {
+      width: 170px;
+      height: 100px; } }
+#content.payment-history .list .table td.details {
+  text-align: left;
+  vertical-align: top; }
+  #content.payment-history .list .table td.details h4 {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 26px; }
+    @media (min-width: 768px) {
+      #content.payment-history .list .table td.details h4 {
+        width: 220px; } }
+    @media (min-width: 1220px) {
+      #content.payment-history .list .table td.details h4 {
+        width: 400px; } }
+  #content.payment-history .list .table td.details dl {
+    display: inline-block; }
+    #content.payment-history .list .table td.details dl dt, #content.payment-history .list .table td.details dl dd {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: normal;
+      color: #888; }
+  @media (min-width: 768px) {
+    #content.payment-history .list .table td.details div:nth-of-type(1) {
+      margin-top: 5px;
+      margin-bottom: 25px; } }
+  #content.payment-history .list .table td.details dl.price {
+    margin-right: 5px; }
+    #content.payment-history .list .table td.details dl.price dt, #content.payment-history .list .table td.details dl.price dd {
+      color: #f36523; }
+  @media (min-width: 768px) {
+    #content.payment-history .list .table td.details dl.price dt, #content.payment-history .list .table td.details dl.price dd, #content.payment-history .list .table td.details dl.count dt, #content.payment-history .list .table td.details dl.count dd {
+      font-size: 13px;
+      line-height: 20px; } }
+#content.payment-history .list .table td.price {
+  color: #333; }
+  #content.payment-history .list .table td.price strong {
+    font-size: 15px; }
+    @media (min-width: 768px) {
+      #content.payment-history .list .table td.price strong {
+        font-size: 20px; } }
+#content.payment-history .list .table td.status span {
+  display: block;
+  width: 100px;
+  height: 26px;
+  margin: 0 auto;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background-color: #f36523;
+  font-size: 13px;
+  line-height: 26px;
+  color: #fff; }
+#content.payment-history .list .table td.status .status-1 {
+  background-color: #cf98d9; }
+#content.payment-history .list .table td.status .status-2 {
+  background-color: #70bded; }
+#content.payment-history .list .table td.status .status-3 {
+  background-color: #f58c66; }
+#content.payment-history .list .table td.status .status-4 {
+  background-color: #70bcb2; }
+#content.payment-history .list .table td.status .status-5 {
+  background-color: #838383; }
+#content.payment-history .list .table td.status .status-6 {
+  background-color: #da7777; }
 
 /*# sourceMappingURL=mypage.css.map */

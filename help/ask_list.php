@@ -23,7 +23,7 @@
                             </select>
                         </p>
                         <p class="keyword">
-                            <label class="sr-only" for="board-keyword"></label>
+                            <label class="sr-only" for="board-keyword">검색 키워드</label>
                             <input id="board-keyword" type="text" name="">
                         </p>
                         <button class="btn btn-primary btn-sm" type="submit">검색하기</button>

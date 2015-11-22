@@ -18,7 +18,7 @@
                     <ul class="row">
                         <li class="col-xs-6 col-sm-3">
                             <a class="active" href="#">
-                                <h4>후원성공 프로젝트</h4>
+                                <h4>후원성공 프로젝트<i class="icon-angle-right"></i></h4>
                                 <div>
                                     <p>10,000,000<small>원</small></p>
                                     <strong>3</strong>
@@ -27,7 +27,7 @@
                         </li>
                         <li class="col-xs-6 col-sm-3">
                             <a href="#">
-                                <h4>정산완료 프로젝트</h4>
+                                <h4>정산완료 프로젝트<i class="icon-angle-right"></i></h4>
                                 <div>
                                     <p>10,000,000<small>원</small></p>
                                     <strong>3</strong>
@@ -36,7 +36,7 @@
                         </li>
                         <li class="col-xs-6 col-sm-3">
                             <a href="#">
-                                <h4>후원실패 프로젝트</h4>
+                                <h4>후원실패 프로젝트<i class="icon-angle-right"></i></h4>
                                 <div>
                                     <p>10,000,000<small>원</small></p>
                                     <strong>3</strong>
@@ -45,7 +45,7 @@
                         </li>
                         <li class="col-xs-6 col-sm-3">
                             <a href="#">
-                                <h4>환불완료 프로젝트</h4>
+                                <h4>환불완료 프로젝트<i class="icon-angle-right"></i></h4>
                                 <div>
                                     <p>10,000,000<small>원</small></p>
                                     <strong>3</strong>

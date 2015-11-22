@@ -4,7 +4,7 @@
     <div class="details">
         <div class="summary">
             <h4>Sleep Doc : 꿀잠자게 해드려요!</h4>
-            <p>수면 장애, 불면증을 개선시켜주는 Sleep-doc(슬립닥)은</p>
+            <p class="desc">수면 장애, 불면증을 개선시켜주는 Sleep-doc(슬립닥)은</p>
             <ul>
                 <li>
                     <i class="dot"></i>
@@ -31,12 +31,15 @@
                     </dl>
                 </li>
             </ul>
+            <!--
             <div class="btn-area">
                 <p>
                     <a class="btn btn-default btn-sm" href="#">결제내역</a>
                     <a class="btn btn-default btn-sm" href="#">정보수정</a>
                 </p>
             </div>
+            -->
+            <p class="result">후원성공</p>
         </div>
         <div class="stats">
             <div class="rate">

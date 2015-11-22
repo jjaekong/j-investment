@@ -21,115 +21,115 @@
                     </p>
                 </div>
                 <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="menu">
-                        <p>
-                            <input type="checkbox" name="" value="">
-                            <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
-                        </p>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="menu">
+                            <p>
+                                <input type="checkbox" name="" value="">
+                                <button type="button" class="btn btn-link"><i class="icon-cancel"></i></button>
+                            </p>
+                        </div>
+                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                     </div>
-                    <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/project_item.php'); ?>
                 </div>
-            </div>
                 <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/paging.php'); ?>
             </div>
         </main>

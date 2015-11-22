@@ -52,11 +52,14 @@ body.mypage {
                 white-space: nowrap;
                 text-align: center;
             }
-            > p {
+            .desc {
                 display: none;
             }
             ul {
                 margin-bottom: 15px;
+                @media (min-width: 1220px) {
+                    margin-bottom: 20px;
+                }
                 li {
                     position: relative;
                     padding-left: 10px;
@@ -78,13 +81,24 @@ body.mypage {
             }
             .btn-area {
                 p {
-                    display: block;
                     .btn:hover, .btn:focus {
                         background-color: #fff;
                         border-color: $main-color;
                         color: $main-color;
                     }
                 }
+            }
+            .result {
+                width: 102px;
+                height: 26px;
+                line-height: 26px;
+                border-top-left-radius: 13px;
+                border-top-right-radius: 13px;
+                border-bottom-left-radius: 13px;
+                border-bottom-right-radius: 13px;
+                background-color: #ccc;
+                color: #fff;
+                text-align: center;
             }
             @media (min-width: 1220px) {
                 float: left;
@@ -98,7 +112,7 @@ body.mypage {
                     margin-bottom: 10px;
                     text-align: left;
                 }
-                > p {
+                .desc {
                     overflow: hidden;
                     display: block;
                     margin-bottom: 25px;
@@ -117,7 +131,7 @@ body.mypage {
                 padding-right: 70px;
                 height: 188px;
                 border-top: 0;
-                border-left: 1px solid #ccc;
+                border-left: 1px solid #e9e9e9;
                 margin-left: 440px;
             }
             .rate {
@@ -203,7 +217,7 @@ body.mypage {
                 text-align: center;
                 dt, dd {
                     display: inline-block;
-                    @include font(13px, 20px);
+                    @include font(13px, 20px, normal);
                     time {
                         @extend .font-roboto;
                     }
@@ -334,7 +348,7 @@ body.mypage {
 
 // 찜한 프로젝트
 #content.favorite {
-    .btn-area {
+    > .btn-area {
         p {
             text-align: right;
         }
@@ -357,6 +371,98 @@ body.mypage {
             padding-left: 0;
             color: $main-color;
             font-size: 20px;
+        }
+    }
+}
+
+// 후원결과
+#content.result {
+    .overview {
+        margin-bottom: 60px;
+        @media (min-width: 1220px) {
+            margin-bottom: 70px;    
+        }
+        li {
+            &:nth-of-type(odd) {
+                padding-right: 5px;
+            }
+            &:nth-of-type(even) {
+                padding-left: 5px;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                padding-bottom: 5px;
+            }
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                padding-top: 5px;
+            }
+            @media (min-width: 768px) {
+                &:nth-of-type(odd) {
+                    padding-right: 15px;
+                }
+                &:nth-of-type(even) {
+                    padding-left: 15px;
+                }
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    padding-bottom: 0;
+                }
+                &:nth-of-type(3),
+                &:nth-of-type(4) {
+                    padding-top: 0;
+                }   
+            }
+        }
+        a {
+            display: block;
+            border: 1px solid #dfdfdf;
+            h4 {
+                text-align: center;
+                border-bottom: 1px solid #dfdfdf;
+                @include font(12px, 35px);
+                background-color: #f4f4f4;
+                @media (min-width: 1220px) {
+                    @include font(15px, 45px);
+                }
+            }
+            div {
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+                @extend .font-roboto;
+                @media (min-width: 1220px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                p {
+                    @include font(18px, 42px, bold);
+                    color: $main-color;
+                    border-bottom: 1px dashed #dfdfdf;
+                    small {
+                        color: $font-color;
+                        font-weight: normal;
+                    }
+                    @media (min-width: 1220px) {
+                        @include font(18px, 50px);
+                    }
+                }
+                strong {
+                    @include font(20px, 40px);
+                    @media (min-width: 1220px) {
+                        @include font(25px, 50px);
+                    }
+                }
+            }
+            &:hover, &:focus, &.active {
+                text-decoration: none;
+                border-color: $main-color;
+                h4 {
+                    background-color: $main-color;
+                    border-color: $main-color;
+                    color: #fff;
+                }
+            }
         }
     }
 }

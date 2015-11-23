@@ -53,6 +53,12 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
             line-height: 28px;
         }
     }
+    > p {
+        margin-top: 5px;
+        @media (min-width: 1220px) {
+            margin-top: 10px;
+        }
+    }
 }
 .btn {
     box-shadow: none !important;

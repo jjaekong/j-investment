@@ -1,4 +1,4 @@
-.font-roboto, .my-project-item .details .stats .rate h5, .my-project-item .details .stats .rate .progress .progress-bar, .my-project-item .details .stats .involve > div dt, .my-project-item .details .stats .period dt time, .my-project-item .details .stats .period dd time, #content.result .overview a div, #content.payment-history .overview a p, #content.payment-history .list .table td.price strong {
+.font-roboto, .my-project-item .details .stats .rate h5, .my-project-item .details .stats .rate .progress .progress-bar, .my-project-item .details .stats .involve > div dt, .my-project-item .details .stats .period dt time, .my-project-item .details .stats .period dd time, #content.result .overview a div, #content.payment-history .overview a p, #content.payment-history .list .summary strong, #content.payment-history .list .table td.price strong, #content.register.step2 .sponsor .period strong {
   font-family: 'Roboto', sans-serif; }
 
 /*
@@ -492,7 +492,8 @@
       font-size: 20px;
       line-height: 30px; } }
   #content.payment-history .list .summary strong {
-    color: #f36523; }
+    color: #f36523;
+    font-weight: normal; }
   #content.payment-history .list .summary .count p {
     margin-bottom: 5px; }
     @media (min-width: 768px) {
@@ -603,5 +604,110 @@
   background-color: #838383; }
 #content.payment-history .list .table td.status .status-6 {
   background-color: #da7777; }
+
+#content.register.step2 .section-header {
+  position: relative; }
+  @media (min-width: 768px) {
+    #content.register.step2 .section-header {
+      margin-top: 50px; } }
+  @media (min-width: 768px) {
+    #content.register.step2 .section-header .btn-add-reward {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      margin-top: 0; } }
+#content.register.step2 .notify {
+  padding: 15px;
+  border: 1px solid #dfdfdf; }
+  #content.register.step2 .notify .require {
+    font-style: normal;
+    color: #f70000; }
+  #content.register.step2 .notify p {
+    margin-bottom: 5px; }
+    #content.register.step2 .notify p:last-child {
+      margin-bottom: 0; }
+  @media (min-width: 1220px) {
+    #content.register.step2 .notify {
+      padding: 20px; } }
+#content.register.step2 .help {
+  margin-top: 0; }
+#content.register.step2 .category select {
+  min-width: 100px; }
+#content.register.step2 .default #project-title,
+#content.register.step2 .default #project-desc {
+  width: 100%; }
+#content.register.step2 .default #staff-email,
+#content.register.step2 .default #homepage {
+  min-width: 300px; }
+#content.register.step2 .sponsor .ex {
+  font-size: 12px;
+  color: #888; }
+#content.register.step2 .sponsor .period input {
+  min-width: 80px;
+  max-width: 120px; }
+#content.register.step2 .sponsor .period strong {
+  color: #f36523;
+  font-size: 1.2em; }
+#content.register.step2 .sponsor .goal-personnel label {
+  margin-right: 10px;
+  font-weight: normal; }
+  #content.register.step2 .sponsor .goal-personnel label input[type="text"] {
+    min-width: 80px;
+    max-width: 120px; }
+#content.register.step2 .details .project-editor {
+  min-height: 100px;
+  border: 1px solid #dfdfdf; }
+#content.register.step2 .reward .reward-item {
+  position: relative; }
+  #content.register.step2 .reward .reward-item h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold; }
+    @media (min-width: 768px) {
+      #content.register.step2 .reward .reward-item h4 {
+        font-size: 16px;
+        line-height: 22px; } }
+  #content.register.step2 .reward .reward-item .remove-reward {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px; }
+    #content.register.step2 .reward .reward-item .remove-reward label {
+      font-weight: normal; }
+      #content.register.step2 .reward .reward-item .remove-reward label input {
+        position: relative;
+        top: 2px; }
+  #content.register.step2 .reward .reward-item + .reward-item {
+    margin-top: 30px; }
+#content.register.step2 .reward .schedule input {
+  min-width: 250px; }
+#content.register.step2 .upload .section-header ul {
+  margin-top: 5px; }
+  @media (min-width: 1220px) {
+    #content.register.step2 .upload .section-header ul {
+      margin-top: 10px; } }
+#content.register.step2 .upload .file-uploader {
+  min-height: 100px;
+  border: 1px solid #dfdfdf; }
+#content.register.step2 .btn-area {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  @media (min-width: 768px) {
+    #content.register.step2 .btn-area {
+      margin-top: 100px;
+      margin-bottom: 100px; } }
+  #content.register.step2 .btn-area p {
+    text-align: center; }
+    #content.register.step2 .btn-area p .btn {
+      min-width: 120px;
+      margin: 0 5px;
+      font-size: 14px; }
+      @media (min-width: 768px) {
+        #content.register.step2 .btn-area p .btn {
+          min-width: 180px;
+          font-size: 18px; } }
 
 /*# sourceMappingURL=mypage.css.map */

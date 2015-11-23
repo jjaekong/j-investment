@@ -605,6 +605,8 @@ body.mypage {
             }
             strong {
                 color: $main-color;
+                font-weight: normal;
+                @extend .font-roboto;
             }
             .count p {
                 margin-bottom: 5px;
@@ -742,6 +744,162 @@ body.mypage {
                 }
                 .status-6 {
                     background-color: #da7777;
+                }
+            }
+        }
+    }
+}
+
+// 프로젝트 등록하기
+#content.register {
+    &.step2 {
+        .section-header  {
+            position: relative;
+            @media (min-width: 768px) {
+                margin-top: 50px;
+            }
+            .btn-add-reward {
+                @media (min-width: 768px) {
+                    position: absolute;
+                    top: 28px;
+                    right: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+        .notify {
+            padding: 15px;
+            border: 1px solid #dfdfdf;
+            .require {
+                font-style: normal;
+                color: #f70000;
+            }
+            p {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media (min-width: 1220px) {
+                padding: 20px;
+            }
+        }
+        .help {
+            margin-top: 0;
+        }
+        .category {
+            select {
+                min-width: 100px;
+            }
+        }
+        .default {
+            #project-title,
+            #project-desc {
+                width: 100%;
+            }
+            #staff-email,
+            #homepage {
+                min-width: 300px;
+            }
+        }
+        .sponsor {
+            .ex {
+                font-size: 12px;
+                color: #888;
+            }
+            .period {
+                input {
+                    min-width: 80px;
+                    max-width: 120px;
+                }
+                strong {
+                    color: $main-color;
+                    font-size: 1.2em;
+                    @extend .font-roboto;
+                }
+            }
+            .goal-personnel {
+                label {
+                    margin-right: 10px;
+                    font-weight: normal;
+                    input[type="text"] {
+                        min-width: 80px;
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+        .details {
+            .project-editor {
+                min-height: 100px;
+                border: 1px solid #dfdfdf;
+            }
+        }
+        .reward {
+            .reward-item {
+                position: relative;
+                h4 {
+                    margin-bottom: 10px;
+                    @include font(14px, 20px, bold);
+                    @media (min-width: 768px) {
+                        @include font(16px, 22px);
+                    }
+                }
+                .remove-reward {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 20px;
+                    @include font(13px, 20px);
+                    label {
+                        font-weight: normal;
+                        input {
+                            position: relative;
+                            top: 2px;
+                        }
+                    }
+                }
+                & + .reward-item {
+                    margin-top: 30px;
+                }
+            }
+            .schedule {
+                input {
+                    min-width: 250px;
+                }
+            }
+        }
+        .upload {
+            .section-header {
+                ul {
+                    margin-top: 5px;
+                    @media (min-width: 1220px) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .file-uploader {
+                min-height: 100px;
+                border: 1px solid #dfdfdf;
+            }
+        }
+        .btn-area {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            @media (min-width: 768px) {
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+            p {
+                text-align: center;
+                .btn {
+                    min-width: 120px;
+                    margin: 0 5px;
+                    font-size: 14px;
+                    @media (min-width: 768px) {
+                        min-width: 180px;
+                        font-size: 18px;
+                    }
                 }
             }
         }

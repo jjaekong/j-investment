@@ -74,6 +74,11 @@ p, address, ol, ul, dl, h1, h2, h3, h4, h5, h6, label {
       .section-header .section-title {
         font-size: 25px;
         line-height: 28px; } }
+  .section-header > p {
+    margin-top: 5px; }
+    @media (min-width: 1220px) {
+      .section-header > p {
+        margin-top: 10px; } }
 
 .btn {
   box-shadow: none !important; }

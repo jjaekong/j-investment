@@ -10,7 +10,7 @@
         <main id="content" class="join">
             <div class="container">
                 <div>
-                    <div class="join-form">
+                    <div class="form-content">
                         <div class="page-header">
                             <h2 class="page-title">회원가입</h2>
                             <p>회원가입 후 와와벤쳐스의 다양한 서비스를 이용하세요.</p>

@@ -1,26 +1,23 @@
 @import 'common';
 
 // 공통
-
-// 회원가입
-#content.join {
+body.member #content {
     .container {
         max-width: 510px;
         width: 100%;
-        padding: 10px 0;
+        padding: 10px;
         > div {    
             border: 1px solid #e1e1e1;
         }
         @media (min-width: 768px) {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding: 50px 0;
         }
         @media (min-width: 1220px) {
             padding-top: 70px;
             padding-bottom: 70px;
         }
     }
-    .join-form {
+    .form-content {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 40px;
@@ -90,6 +87,28 @@
                 margin-top: 20px;
             }
         }
+        .util {
+            overflow: hidden;
+            margin-bottom: 15px;
+            > p {
+                float: left;
+                width: 50%;
+                &.save {
+                    position: relative;
+                    padding-left: 20px;
+                    label {
+                        font-weight: normal;
+                    }
+                    input {
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                &.find {
+                    text-align: right;
+                }
+            }
+        }
     }
     .connect-fb {
         position: relative;
@@ -123,7 +142,8 @@
             }
         }
     }
-    .go-login {
+    .go-login,
+    .go-join {
         padding: 17px 20px;
         background-color: #898989;
         color: #fff;

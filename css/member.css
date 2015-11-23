@@ -22,120 +22,138 @@
   .icon-circle > i {
     font-size: 85%; }
 
-#content.join .container {
+body.member #content .container {
   max-width: 510px;
   width: 100%;
-  padding: 10px 0; }
-  #content.join .container > div {
+  padding: 10px; }
+  body.member #content .container > div {
     border: 1px solid #e1e1e1; }
   @media (min-width: 768px) {
-    #content.join .container {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
+    body.member #content .container {
+      padding: 50px 0; } }
   @media (min-width: 1220px) {
-    #content.join .container {
+    body.member #content .container {
       padding-top: 70px;
       padding-bottom: 70px; } }
-#content.join .join-form {
+body.member #content .form-content {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px; }
   @media (min-width: 768px) {
-    #content.join .join-form {
+    body.member #content .form-content {
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 50px; } }
   @media (min-width: 1220px) {
-    #content.join .join-form {
+    body.member #content .form-content {
       padding-left: 70px;
       padding-right: 70px;
       padding-bottom: 55px; } }
-#content.join .page-header {
+body.member #content .page-header {
   margin-bottom: 20px;
   text-align: center; }
   @media (min-width: 768px) {
-    #content.join .page-header {
+    body.member #content .page-header {
       margin-top: 50px;
       margin-bottom: 30px; } }
   @media (min-width: 1220px) {
-    #content.join .page-header {
+    body.member #content .page-header {
       margin-top: 60px;
       margin-bottom: 45px; }
-      #content.join .page-header > p {
+      body.member #content .page-header > p {
         display: block;
         margin-top: 10px; } }
-#content.join .form-wrap {
+body.member #content .form-wrap {
   margin-bottom: 40px; }
   @media (min-width: 768px) {
-    #content.join .form-wrap {
+    body.member #content .form-wrap {
       margin-bottom: 50px; } }
-  #content.join .form-wrap label {
+  body.member #content .form-wrap label {
     width: 100%; }
-  #content.join .form-wrap input[type="text"],
-  #content.join .form-wrap input[type="email"],
-  #content.join .form-wrap input[type="password"] {
+  body.member #content .form-wrap input[type="text"],
+  body.member #content .form-wrap input[type="email"],
+  body.member #content .form-wrap input[type="password"] {
     width: 100%;
     height: 40px;
     padding: 10px;
     line-height: 20px;
     border: 1px solid #ccc; }
-  #content.join .form-wrap > form > p {
+  body.member #content .form-wrap > form > p {
     margin-bottom: 10px; }
-  #content.join .form-wrap .agreement {
+  body.member #content .form-wrap .agreement {
     position: relative;
     padding-left: 20px;
     margin-bottom: 25px; }
-    #content.join .form-wrap .agreement input {
+    body.member #content .form-wrap .agreement input {
       position: absolute;
       left: 0; }
-    #content.join .form-wrap .agreement label {
+    body.member #content .form-wrap .agreement label {
       font-weight: normal; }
-      #content.join .form-wrap .agreement label i {
+      body.member #content .form-wrap .agreement label i {
         font-style: normal;
         color: #f36523; }
     @media (min-width: 768px) {
-      #content.join .form-wrap .agreement {
+      body.member #content .form-wrap .agreement {
         margin-top: 20px; } }
-#content.join .connect-fb {
+  body.member #content .form-wrap .util {
+    overflow: hidden;
+    margin-bottom: 15px; }
+    body.member #content .form-wrap .util > p {
+      float: left;
+      width: 50%; }
+      body.member #content .form-wrap .util > p.save {
+        position: relative;
+        padding-left: 20px; }
+        body.member #content .form-wrap .util > p.save label {
+          font-weight: normal; }
+        body.member #content .form-wrap .util > p.save input {
+          position: absolute;
+          left: 0; }
+      body.member #content .form-wrap .util > p.find {
+        text-align: right; }
+body.member #content .connect-fb {
   position: relative; }
-  #content.join .connect-fb h3 {
+  body.member #content .connect-fb h3 {
     position: relative;
     margin-bottom: 20px;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
     z-index: 1; }
-    #content.join .connect-fb h3 span {
+    body.member #content .connect-fb h3 span {
       padding: 0 10px;
       background-color: #fff; }
-  #content.join .connect-fb .bar {
+  body.member #content .connect-fb .bar {
     position: absolute;
     top: 12px;
     width: 100%;
     height: 1px;
     background-color: #d2d2d2; }
-  #content.join .connect-fb .btn-connect-fb {
+  body.member #content .connect-fb .btn-connect-fb {
     background-color: #0054a6;
     color: #fff; }
-  #content.join .connect-fb .help {
+  body.member #content .connect-fb .help {
     margin-top: 5px;
     font-size: 12px;
     line-height: 18px; }
     @media (min-width: 768px) {
-      #content.join .connect-fb .help {
+      body.member #content .connect-fb .help {
         margin-top: 20px; } }
-#content.join .go-login {
+body.member #content .go-login,
+body.member #content .go-join {
   padding: 17px 20px;
   background-color: #898989;
   color: #fff;
   font-size: 16px;
   line-height: 25px;
   text-align: center; }
-  #content.join .go-login a {
+  body.member #content .go-login a,
+  body.member #content .go-join a {
     color: #fff;
     text-decoration: underline; }
   @media (min-width: 768px) {
-    #content.join .go-login {
+    body.member #content .go-login,
+    body.member #content .go-join {
       font-size: 18px; } }
 
 /*# sourceMappingURL=member.css.map */

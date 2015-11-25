@@ -31,3 +31,7 @@
 .icon-check:before { content: '\e81d'; } /* '' */
 .icon-cancel:before { content: '\e81e'; } /* '' */
 .icon-calendar:before { content: '\e81f'; } /* '' */
+.icon-down-dir:before { content: '\e820'; } /* '' */
+.icon-left-dir:before { content: '\e821'; } /* '' */
+.icon-right-dir:before { content: '\e822'; } /* '' */
+.icon-up-dir:before { content: '\e823'; } /* '' */

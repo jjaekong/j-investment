@@ -111,4 +111,18 @@
   #content.faq .list li.opened > div {
     display: block; }
 
+#content.policy .policy-content {
+  padding: 15px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 10px;
+  background-color: #fafafa; }
+  @media (min-width: 768px) {
+    #content.policy .policy-content {
+      padding: 30px;
+      margin-bottom: 50px; } }
+  @media (min-width: 1220px) {
+    #content.policy .policy-content {
+      padding: 40px;
+      margin-bottom: 100px; } }
+
 /*# sourceMappingURL=help.css.map */

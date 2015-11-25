@@ -192,13 +192,14 @@ body > .skip:focus {
     #header .logo img {
       display: block;
       margin: 13px auto; }
+      @media (min-width: 1220px) {
+        #header .logo img {
+          margin: 16px auto 15px; } }
   #header .row > div {
-    /*
-    padding-top: 13px;
-    padding-bottom: 13px;
-    line-height: 33px;
-    */
     height: 59px; }
+    @media (min-width: 1220px) {
+      #header .row > div {
+        height: 64px; } }
     #header .row > div:first-child {
       border-bottom: 1px solid #ccc; }
       @media (min-width: 768px) {
@@ -208,28 +209,77 @@ body > .skip:focus {
       padding-top: 0;
       padding-bottom: 0;
       line-height: 0; }
-  #header .row > .discover p,
-  #header .row > .start p {
-    text-align: center;
+  #header .row > .discover p > a,
+  #header .row > .start p > a {
+    display: block;
     padding-top: 20px;
-    padding-bottom: 20px; }
-    #header .row > .discover p > a,
-    #header .row > .start p > a {
-      color: #333;
-      font-size: 14px;
-      line-height: 19px; }
+    padding-bottom: 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center; }
+    @media (min-width: 1220px) {
+      #header .row > .discover p > a,
+      #header .row > .start p > a {
+        padding-top: 23px;
+        padding-bottom: 22px; } }
   #header .row > .membership {
     border-left: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      #header .row > .membership {
+        border-right: 1px solid #ccc; } }
+    @media (min-width: 1220px) {
+      #header .row > .membership {
+        border-right: 0; } }
     #header .row > .membership > p {
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 20px; }
+      text-align: center; }
       #header .row > .membership > p > a {
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
         margin-left: 3px;
         margin-right: 3px;
         color: #f36523;
         font-size: 14px;
         line-height: 19px; }
+        @media (min-width: 1220px) {
+          #header .row > .membership > p > a {
+            padding-top: 23px;
+            padding-bottom: 22px; } }
+    #header .row > .membership > .btn-group {
+      width: 100%;
+      height: 100%; }
+      #header .row > .membership > .btn-group .btn {
+        padding-top: 20px;
+        padding-bottom: 19px;
+        border: 0;
+        font-weight: bold;
+        color: #333; }
+        @media (min-width: 1220px) {
+          #header .row > .membership > .btn-group .btn {
+            padding-top: 22px;
+            padding-bottom: 22px; } }
+        #header .row > .membership > .btn-group .btn > i {
+          color: #f36523; }
+      #header .row > .membership > .btn-group .dropdown-menu {
+        left: auto;
+        right: -11px;
+        min-width: 270px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 0;
+        margin-top: 1px;
+        border-radius: 0;
+        border-color: #dfdfdf;
+        box-shadow: none; }
+        @media (min-width: 768px) {
+          #header .row > .membership > .btn-group .dropdown-menu {
+            right: -16px; } }
+        #header .row > .membership > .btn-group .dropdown-menu a {
+          padding: 0 25px;
+          font-size: 13px;
+          line-height: 28px;
+          color: #666; }
   #header .row > .search {
     border-left: 1px solid #ccc; }
     #header .row > .search form {
@@ -239,6 +289,11 @@ body > .skip:focus {
       padding-bottom: 15px;
       padding-right: 36px;
       border-right: 1px solid #ccc; }
+      @media (min-width: 1220px) {
+        #header .row > .search form {
+          height: 64px;
+          padding-top: 18px;
+          padding-bottom: 17px; } }
       #header .row > .search form p {
         width: 100%; }
         #header .row > .search form p input {
@@ -254,6 +309,9 @@ body > .skip:focus {
         height: 29px;
         padding: 0;
         background-color: #fff; }
+        @media (min-width: 1220px) {
+          #header .row > .search form button {
+            top: 18px; } }
 
 /*
 // 푸터

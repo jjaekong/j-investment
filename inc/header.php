@@ -16,10 +16,26 @@
                 </p>
             </div>
             <div class="col-xs-5 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-0 membership">
+                <!-- 
                 <p>
                     <a href="#">회원가입</a>
                     <a href="#">로그인</a>
                 </p>
+                -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-link btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        마이 페이지 <i class="icon-down-dir"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">내 정보 수정</a></li>
+                        <li><a href="#">나의 등록 프로젝트</a></li>
+                        <li><a href="#">찜한 프로젝트</a></li>
+                        <li><a href="#">나의 후원성공&amp;후원실패</a></li>
+                        <li><a href="#">프로젝트 결제내역</a></li>
+                        <li><a href="#">문의내역</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="hidden-xs hidden-sm col-md-3 search">
                 <form action="#" method="post">

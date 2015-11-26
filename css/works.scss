@@ -1,0 +1,113 @@
+@import 'common';
+
+// 공통
+
+// 크라우드 펀딩이란
+#content.funding {
+    .section-header {
+        margin-bottom: 0;
+        text-align: center;
+        .section-title {
+            margin-bottom: 20px;
+            @include font(22px, 26px);
+            color: #333;
+            @media (min-width: 1220px) {
+                @include font(30px, 36px);
+            }
+        }
+        > p {
+            @include font(13px, 18px);
+            i {
+                font-style: normal;
+                color: $main-color;
+            }
+            @media (min-width: 1220px) {
+                @include font(15px, 24px);
+            }
+        }
+    }
+    .overview {
+        margin-top: 30px;
+        padding: 65px 10px;
+        background-image: url(../images/works/bg_funding_xs.gif);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        @media (min-width: 768px) {
+            margin-top: 70px;
+            background-image: url(../images/works/bg_funding_lg.gif);
+        }
+        .section-header {
+            margin-top: 0;
+            .section-title {
+                @include font(22px, 26px);
+                @media (min-width: 1220px) {
+                    @include font(30px, 36px);
+                }
+            }
+            > p {
+                @include font(15px, 22px);
+                @media (min-width: 1220px) {
+                    @include font(18px, 26px);
+                }
+            }
+        }
+    }
+    .type {
+        .section-header {
+            margin-bottom: 0;
+        }
+        .section-title {
+            margin-top: 55px;
+            @media (min-width: 1220px) {
+                margin-top: 100px;
+            }
+        }
+        .feature {
+            margin-top: 40px;
+            text-align: center;
+            .img-responsive {
+                margin: 0 auto;
+            }
+            h3 {
+                margin-top: 20px;
+                margin-bottom: 15px;
+                @include font(18px, 22px);
+                color: #333;
+                @media (min-width: 1220px) {
+                    @include font(24px, 30px);
+                }
+            }
+            > p {
+                @include font(13px, 18px);
+                @media (min-width: 1220px) {
+                    @include font(14px, 22px);
+                }
+            }
+            @media (min-width: 1220px) {
+                margin-top: 50px;
+            }
+        }
+    }
+    .process {
+        margin-bottom: 100px;
+        @media (min-width: 1220px) {
+            margin-bottom: 120px;
+        }
+        .section-title {
+            margin-top: 75px;
+            @media (min-width: 1220px) {
+                margin-top: 120px;
+            }
+        }
+        .step {
+            margin-top: 45px;
+            @media (min-width: 1220px) {
+                margin-top: 65px;
+            }
+            > p {
+                text-align: center;
+            }
+        }
+    }
+}

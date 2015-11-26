@@ -121,4 +121,59 @@
     #content.funding .process .step > p {
       text-align: center; }
 
+#content.start .page-header {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dfdfdf; }
+  @media (min-width: 1220px) {
+    #content.start .page-header {
+      padding-bottom: 35px; } }
+#content.start .guide {
+  margin-bottom: 25px; }
+  #content.start .guide > p {
+    margin-bottom: 25px; }
+  #content.start .guide > ol {
+    padding: 15px 20px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #f9f9f9; }
+    @media (min-width: 1220px) {
+      #content.start .guide > ol {
+        padding: 25px 20px 20px; } }
+    #content.start .guide > ol li {
+      margin-bottom: 5px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #555; }
+      @media (min-width: 1220px) {
+        #content.start .guide > ol li {
+          font-size: 13px;
+          line-height: 25px; } }
+#content.start .contact {
+  margin-bottom: 25px; }
+  #content.start .contact h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold; }
+    @media (min-width: 1220px) {
+      #content.start .contact h3 {
+        display: inline-block; } }
+  @media (min-width: 1220px) {
+    #content.start .contact dl {
+      display: inline-block;
+      margin-left: 30px; } }
+  #content.start .contact dl dt, #content.start .contact dl dd {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px; }
+    #content.start .contact dl dt i, #content.start .contact dl dd i {
+      color: #f36523; }
+    @media (min-width: 1220px) {
+      #content.start .contact dl dt, #content.start .contact dl dd {
+        display: inline-block; } }
+#content.start .btn-area {
+  margin-bottom: 50px; }
+  @media (min-width: 1220px) {
+    #content.start .btn-area {
+      margin-bottom: 200px; } }
+
 /*# sourceMappingURL=works.css.map */

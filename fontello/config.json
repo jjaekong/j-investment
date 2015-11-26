@@ -19,6 +19,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59429,
+      "src": "fontawesome"
+    },
+    {
       "uid": "531bc468eecbb8867d822f1c11f1e039",
       "css": "calendar",
       "code": 59423,
@@ -185,6 +191,12 @@
       "css": "leaf",
       "code": 59402,
       "src": "typicons"
+    },
+    {
+      "uid": "ae3so8q0b0n2h8esv9flua2nmwswa8fd",
+      "css": "mail",
+      "code": 59428,
+      "src": "modernpics"
     },
     {
       "uid": "22cfc7af2c4f158b37317c65c92b48c2",

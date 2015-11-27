@@ -102,8 +102,8 @@
                 <div class="col-md-2">
                     <div class="language">
                         <div class="btn-group dropup">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            LANGUAGE <span class="caret"></span>
+                            <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            LANGUAGE <i class="icon-up-dir"></i>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#">한국어</a></li>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.font-roboto, #footer > nav h2, .project-item .progress > .progress-bar {
+.font-roboto, #footer > nav h2, #footer > div .language .btn, .project-item .progress > .progress-bar {
   font-family: 'Roboto', sans-serif; }
 
 /*
@@ -382,8 +382,42 @@ body > .skip:focus {
           border-radius: 50%; }
           #footer > div .sns > p > a:hover, #footer > div .sns > p > a:focus {
             background-color: #000; }
+          #footer > div .sns > p > a.facebook:hover, #footer > div .sns > p > a.facebook:focus {
+            background-color: #3a5795;
+            color: #fff; }
+          #footer > div .sns > p > a.twitter:hover, #footer > div .sns > p > a.twitter:focus {
+            background-color: #55ACEE;
+            color: #fff; }
+          #footer > div .sns > p > a.linkedin:hover, #footer > div .sns > p > a.linkedin:focus {
+            background-color: #0177B5;
+            color: #fff; }
+          #footer > div .sns > p > a.gplus:hover, #footer > div .sns > p > a.gplus:focus {
+            background-color: #DB4437;
+            color: #fff; }
+          #footer > div .sns > p > a.youtube:hover, #footer > div .sns > p > a.youtube:focus {
+            background-color: #E62B24;
+            color: #fff; }
     #footer > div .language {
       text-align: center; }
+      #footer > div .language .btn-group {
+        max-width: 180px;
+        width: 100%; }
+      #footer > div .language .btn {
+        width: 100%;
+        border-radius: 0;
+        border: 0;
+        font-size: 13px; }
+      #footer > div .language .dropdown-menu {
+        width: 100% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none; }
+        #footer > div .language .dropdown-menu li {
+          font-size: 13px;
+          text-align: center; }
 
 /*
 // 프로젝트 아이템

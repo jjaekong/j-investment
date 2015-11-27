@@ -700,4 +700,66 @@
     #content.involve .btn-area .btn.btn-default {
       color: #666; }
 
+#content.pay-done .message {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    #content.pay-done .message {
+      margin-top: 50px;
+      margin-bottom: 100px; } }
+  @media (min-width: 1220px) {
+    #content.pay-done .message {
+      margin-top: 65px;
+      margin-bottom: 120px; } }
+  #content.pay-done .message h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px; }
+    #content.pay-done .message h2 i {
+      font-style: normal;
+      color: #f36523; }
+    @media (min-width: 768px) {
+      #content.pay-done .message h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 45px; } }
+    @media (min-width: 1220px) {
+      #content.pay-done .message h2 {
+        margin-bottom: 40px;
+        font-size: 35px;
+        line-height: 40px; } }
+  #content.pay-done .message > div {
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    background-color: #fafafa; }
+    @media (min-width: 768px) {
+      #content.pay-done .message > div {
+        padding: 40px; } }
+    @media (min-width: 1220px) {
+      #content.pay-done .message > div {
+        padding: 50px; } }
+    #content.pay-done .message > div > p {
+      max-width: 570px;
+      margin: 0 auto 20px; }
+      @media (min-width: 768px) {
+        #content.pay-done .message > div > p {
+          margin-bottom: 35px; } }
+      @media (min-width: 1220px) {
+        #content.pay-done .message > div > p {
+          margin-bottom: 45px; } }
+    #content.pay-done .message > div > .btn-area {
+      max-width: 570px;
+      padding-top: 20px;
+      border-top: 1px dashed #dfdfdf;
+      margin: 0 auto; }
+      #content.pay-done .message > div > .btn-area .btn {
+        min-width: 190px; }
+      @media (min-width: 768px) {
+        #content.pay-done .message > div > .btn-area {
+          padding-top: 35px; } }
+      @media (min-width: 1220px) {
+        #content.pay-done .message > div > .btn-area {
+          padding-top: 40px; } }
+
 /*# sourceMappingURL=discover.css.map */

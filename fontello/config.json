@@ -19,6 +19,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "acf41aa4018e58d49525665469e35665",
+      "css": "thumbs-up",
+      "code": 59430,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7533e68038fc6d520ede7a7ffa0a2f64",
+      "css": "thumbs-down",
+      "code": 59431,
+      "src": "fontawesome"
+    },
+    {
       "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
       "css": "phone",
       "code": 59429,

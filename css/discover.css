@@ -608,6 +608,112 @@
           position: absolute;
           top: 25px;
           right: 20px; } }
+#content.view #comment form {
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 30px;
+  background-color: #fafafa; }
+  @media (min-width: 768px) {
+    #content.view #comment form {
+      padding: 20px 30px; } }
+  #content.view #comment form label {
+    font-weight: normal;
+    line-height: 30px; }
+  #content.view #comment form input[type="text"],
+  #content.view #comment form input[type="password"],
+  #content.view #comment form textarea {
+    width: 100%;
+    background-color: #fff; }
+  #content.view #comment form textarea {
+    height: 70px; }
+  #content.view #comment form #comment-captcha {
+    width: 80px; }
+  #content.view #comment form .row > div {
+    margin-bottom: 10px; }
+    #content.view #comment form .row > div:nth-of-type(6) {
+      height: 70px; }
+#content.view #comment .list {
+  border-top: 1px solid #dfdfdf; }
+  #content.view #comment .list li {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf; }
+    @media (min-width: 768px) {
+      #content.view #comment .list li {
+        padding-top: 15px;
+        padding-bottom: 5px; } }
+    #content.view #comment .list li .comment-item {
+      position: relative;
+      font-size: 12px;
+      line-height: 20px; }
+      @media (min-width: 768px) {
+        #content.view #comment .list li .comment-item {
+          font-size: 13px; } }
+      #content.view #comment .list li .comment-item .comment-writer {
+        margin-right: 20px; }
+      #content.view #comment .list li .comment-item .comment-title {
+        display: inline; }
+        @media (min-width: 768px) {
+          #content.view #comment .list li .comment-item .comment-title {
+            display: inline-block;
+            margin-right: 220px; } }
+      #content.view #comment .list li .comment-item .comment-details {
+        padding: 5px 0; }
+        @media (min-width: 768px) {
+          #content.view #comment .list li .comment-item .comment-details {
+            padding: 10px 0; } }
+      #content.view #comment .list li .comment-item .comment-react dt, #content.view #comment .list li .comment-item .comment-react dd {
+        display: inline-block; }
+      #content.view #comment .list li .comment-item .comment-react dd {
+        margin-right: 10px; }
+      #content.view #comment .list li .comment-item .comment-react .up {
+        color: #f36523; }
+      @media (min-width: 768px) {
+        #content.view #comment .list li .comment-item .comment-react {
+          position: absolute;
+          top: 0;
+          right: 100px; } }
+      #content.view #comment .list li .comment-item .btn-area {
+        overflow: hidden; }
+        #content.view #comment .list li .comment-item .btn-area .btn-link {
+          padding-left: 0;
+          color: #666; }
+        #content.view #comment .list li .comment-item .btn-area .btn-up {
+          color: #f36523; }
+        @media (min-width: 768px) {
+          #content.view #comment .list li .comment-item .btn-area {
+            position: absolute;
+            right: 0;
+            top: -5px; }
+            #content.view #comment .list li .comment-item .btn-area .btn-reply {
+              margin-left: 10px; } }
+    #content.view #comment .list li .repy-item {
+      position: relative;
+      padding: 10px 10px 0 30px;
+      border: 1px solid #dfdfdf;
+      margin-top: 10px;
+      background-color: #fafafa;
+      font-size: 12px;
+      line-height: 20px; }
+      @media (min-width: 768px) {
+        #content.view #comment .list li .repy-item {
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 13px;
+          padding: 15px 20px 15px 40px; } }
+      #content.view #comment .list li .repy-item i.icon-level-down {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #f36523; }
+        @media (min-width: 768px) {
+          #content.view #comment .list li .repy-item i.icon-level-down {
+            top: 15px;
+            left: 20px; } }
+      #content.view #comment .list li .repy-item .reply-writer {
+        float: right; }
+      #content.view #comment .list li .repy-item .reply-details {
+        clear: both; }
 
 #content.involve .section-header {
   margin-top: 0;

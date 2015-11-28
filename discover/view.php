@@ -2,12 +2,13 @@
     <title>WAWA VENTURES</title> 
     <link href="/css/default.css" rel="stylesheet">
     <link href="/css/discover.css" rel="stylesheet">
+    <link href="/css/board.css" rel="stylesheet">
 </head>
 <body class="discover">
     <a href="#content" class="skip sr-only sr-only-focusable">컨텐츠로 건너뛰기</a>
     <div id="wrapper">
         <?php require_once($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
-        <main id="content" class="view">
+        <main id="content" class="view board">
             <section class="overview">
                 <div class="container">
                     <h2>Sleep Doc : 꿀잠자게 해드려요!</h2>
@@ -90,10 +91,10 @@
                     </div>
                     <div class="col-sm-12 col-md-8">
                         <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li role="presentation" class="active"><a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab"><span class="hidden-xs">프로젝트 </span>소개</a></li>
+                            <li role="presentation"><a href="#introduce" aria-controls="introduce" role="tab" data-toggle="tab"><span class="hidden-xs">프로젝트 </span>소개</a></li>
                             <li role="presentation"><a href="#process" aria-controls="process" role="tab" data-toggle="tab">진행과정(10)</a></li>
                             <li role="presentation"><a href="#sponsors" aria-controls="sponsors" role="tab" data-toggle="tab">후원자(220)</a></li>
-                            <li role="presentation"><a href="#comment" aria-controls="comments" role="tab" data-toggle="tab">댓글(502)</a></li>
+                            <li role="presentation" class="active"><a href="#comment" aria-controls="comments" role="tab" data-toggle="tab">댓글(502)</a></li>
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane" id="introduce">
@@ -102,15 +103,107 @@
                             <div role="tabpanel" class="tab-pane" id="process">
                                 <iframe id="process-frame" src="/board/list.php" width="100%" scrolling="no"></iframe>
                             </div>
-                            <div role="tabpanel" class="tab-pane active" id="sponsors">
+                            <div role="tabpanel" class="tab-pane" id="sponsors">
                                 <p class="score">현재 <i>6</i>명이 후원하고 있습니다.</p>
-                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
-                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
-                                        <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
+                                <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/sponsor_info.php'); ?>
                                 <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/paging.php'); ?>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="comment">
-                                프로젝트 댓글
+                            <div role="tabpanel" class="tab-pane active" id="comment">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-2"><label for="comment-title">제목</label></div>
+                                        <div class="col-xs-9 col-sm-5"><input id="comment-title" type="text" name=""></div>
+                                        <div class="col-xs-3 col-sm-2"><label for="comment-pw">비밀번호</label></div>
+                                        <div class="col-xs-9 col-sm-3"><input id="comment-pw" type="password" name=""></div>
+                                        <div class="col-xs-3 col-sm-2">내용</div>
+                                        <div class="col-xs-9 col-sm-10">
+                                            <textarea name="" cols="50" rows="3"></textarea>
+                                        </div>
+                                        <div class="col-xs-3 col-sm-2"><label for="comment-captcha">도배방지</label></div>
+                                        <div class="col-xs-9 col-sm-7">
+                                            <input id="comment-captcha" type="text" name="">
+                                            <p class="help inline"><img src="/images/dummy/img_captcha.gif"></p>
+                                            <p class="help inline">보이는 도배방지키를 입력하세요.</p>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-push-3 col-sm-3 col-sm-push-0"><button class="btn btn-primary btn-block btn-sm" type="submit">등록하기</button></div>
+                                    </div>
+                                </form>
+                                <div class="list">
+                                    <ul>
+                                        <li>
+                                            <div class="comment-item">
+                                                <strong class="comment-writer">작성자</strong>
+                                                <p class="comment-title">저도 작지만 돕고 싶어요</p>
+                                                <div class="comment-details">
+                                                    좋은 프로젝트네요 ^^<br>
+                                                    성공하시고 아프리카의 어린이들이 조금이라도 나은 삶을 살았으면 좋겠습니다
+                                                    <time datetime="2013-07-09 10:10:55">(2013-07-09 10:10:55)</time>
+                                                </div>                                                
+                                                <div class="btn-area">
+                                                    <p class="pull-left">
+                                                        <a href="#" class="btn btn-link btn-sm btn-up"><i class="icon-thumbs-up"></i><span class="sr-only">좋아요</span> 10</a>
+                                                        <a href="#" class="btn btn-link btn-sm btn-down"><i class="icon-thumbs-down"></i><span class="sr-only">싫어요</span> 5</a>
+                                                    </p>
+                                                    <p class="pull-right">
+                                                        <a href="#" class="btn btn-default btn-sm btn-reply">의견등록</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="repy-item">
+                                                <i class="icon-level-down"></i>
+                                                <strong class="reply-title">댓글타이틀 영역입니다.</strong>
+                                                <strong class="reply-writer">작성자명</strong>
+                                                <p class="reply-details">
+                                                    성공하시고 아프리카의 어린이들이 조금이라도 나은 삶을 살았으면 좋겠습니다.
+                                                    <time datetime="2013-07-09 10:10:55">(2013-07-09 10:10:55)</time>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-item">
+                                                <strong class="comment-writer">작성자</strong>
+                                                <p class="comment-title">저도 작지만 돕고 싶어요</p>
+                                                <div class="comment-details">
+                                                    좋은 프로젝트네요 ^^<br>
+                                                    성공하시고 아프리카의 어린이들이 조금이라도 나은 삶을 살았으면 좋겠습니다
+                                                    <time datetime="2013-07-09 10:10:55">(2013-07-09 10:10:55)</time>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <p class="pull-left">
+                                                        <a href="#" class="btn btn-link btn-sm btn-up"><i class="icon-thumbs-up"></i><span class="sr-only">좋아요</span> 10</a>
+                                                        <a href="#" class="btn btn-link btn-sm btn-down"><i class="icon-thumbs-down"></i><span class="sr-only">싫어요</span> 5</a>
+                                                    </p>
+                                                    <p class="pull-right">
+                                                        <a href="#" class="btn btn-default btn-sm btn-reply">의견등록</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-item">
+                                                <strong class="comment-writer">작성자</strong>
+                                                <p class="comment-title">저도 작지만 돕고 싶어요 저도 작지만 돕고 싶어요 저도 작지만 돕고 싶어요 저도 작지만 돕고 싶어요</p>
+                                                <div class="comment-details">
+                                                    좋은 프로젝트네요 ^^<br>
+                                                    성공하시고 아프리카의 어린이들이 조금이라도 나은 삶을 살았으면 좋겠습니다
+                                                    <time datetime="2013-07-09 10:10:55">(2013-07-09 10:10:55)</time>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <p class="pull-left">
+                                                        <a href="#" class="btn btn-link btn-sm btn-up"><i class="icon-thumbs-up"></i><span class="sr-only">좋아요</span> 10</a>
+                                                        <a href="#" class="btn btn-link btn-sm btn-down"><i class="icon-thumbs-down"></i><span class="sr-only">싫어요</span> 5</a>
+                                                    </p>
+                                                    <p class="pull-right">
+                                                        <a href="#" class="btn btn-default btn-sm btn-reply">의견등록</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <?php require($_SERVER['DOCUMENT_ROOT'].'/inc/paging.php'); ?>
                             </div>
                         </div>
                         <section class="visible-lg-block cheer">

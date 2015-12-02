@@ -39,7 +39,7 @@
             @media (min-width: 768px) {
                 display: block;
                 margin-top: 35px;
-                @include font(15px, 22px);
+                @include font(15px, 22px, bold);
                 color: #333;
             }
         }
@@ -345,7 +345,7 @@
     p:nth-of-type(1) {
         margin-bottom: 30px;
         color: #fff;
-        @include font(15px, 18px);
+        @include font(15px, 18px, bold);
         @media (min-width: 1220px) {
             margin-bottom: 50px;
             @include font(18px, 20px);
